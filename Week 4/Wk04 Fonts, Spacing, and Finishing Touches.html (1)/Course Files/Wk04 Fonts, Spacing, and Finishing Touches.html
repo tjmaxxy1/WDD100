@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+	<title>W07.02 More CSS: Fonts and Spacing- Instructions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../Web%20Files/course.css" />
+<style>
+.highlight2 {
+background-color: #bfff80;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<div id="header"><img src="../Web%20Files/smallBanner.jpg" alt="Course Banner" /></div>
+<div id="article">
+<div>
+<h1>Wk04&nbsp;Fonts and Spacing&nbsp;&amp; Finishing Touches&nbsp;</h1>
+<h2><strong>Part I&nbsp;Fonts and Spacing</strong></h2>
+<hr />
+<h4><strong>Activity Directions</strong></h4>
+<p>Estimated Time:&nbsp; 45&nbsp;minutes</p>
+<div class="callout">
+<p>This activity will use the following new css concepts or properties (review the links if you do not remember these from Khan academy):</p>
+<ul>
+<li><a href="http://www.w3schools.com/css/css_font.asp" target="_blank" rel="noopener noreferrer">CSS Fonts</a></li>
+<li><a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank" rel="noopener noreferrer">CSS Box Model</a></li>
+<li><a href="http://www.w3schools.com/css/css_padding.asp" target="_blank" rel="noopener noreferrer">CSS Padding</a></li>
+<li><a href="http://www.w3schools.com/css/css_text.asp" target="_blank" rel="noopener noreferrer">CSS Text Properties</a></li>
+</ul>
+</div>
+<p>Nothing makes a webpage feel like more of a product and less of a project than <em><strong>changing from the default font</strong><strong>s</strong></em>. For your Site Plan, you should have chose one or two fonts&nbsp;and used them as you&nbsp;the home page. Review that now.</p>
+<p>Here is a&nbsp;<a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank" rel="noopener noreferrer">web-safe list</a>&nbsp;that can be used just like Khan academy showed you this week. (Here is another list of the web-safe fonts:&nbsp;<a href="http://www.cssfontstack.com/" target="_blank" rel="noopener noreferrer">http://www.cssfontstack.com/</a>)</p>
+<p>Now we are going to learn how to<strong> import</strong> some fonts and use them on our page.&nbsp; This will add a little sparkle to our sites and teach you the concept of import and use in font family elements.</p>
+<h4>Here is a step by step video for Part I-Fonts and Spacing:</h4>
+<p style="text-align: center;"><iframe width="700" height="400" src="https://www.youtube.com/embed/9ab9rTI5V1E?feature=oembed&amp;rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
+<h2><strong>Step 01</strong></h2>
+<div class="callout">
+<p>Based on your font choices from your site plan, we are going to find&nbsp;<strong>similar fonts</strong>&nbsp;in google fonts to import and replace the fonts you originally have&nbsp;chosen on you on your page.&nbsp; You are to add the appropriate&nbsp;<kbd><strong>font-family</strong>:</kbd>, and&nbsp;<kbd>@import</kbd>&nbsp;lines to your CSS &lt;style&gt; section to change the&nbsp;<em><strong>paragraph font</strong></em>, <strong><em>headline font</em></strong>, and <em><strong>navigation font</strong> </em>on your webpage.&nbsp;</p>
+<p><strong>You MUST import and use at least&nbsp;three google fonts for this assignment</strong>.</p>
+<p>No matter which fonts you&nbsp;choose it is always a good idea to list some fall-back fonts, in case for some reason your imported choice doesn't work correctly... you can control how it degrades.&nbsp; &nbsp;A font family is at least&nbsp; a group of 2 or more fonts... the first in the family is your&nbsp; google imported choice, the second choice in the family should be similar to your first (and usually web-safe),&nbsp;and a third font in the&nbsp;same font family should usually be&nbsp;a default font such as&nbsp;(serif, san-serif, fantasy, monospace, or script)</p>
+<p>So for example if I chose Helvetica&nbsp;as my font for body copy I would add something like&nbsp;<kbd>font-family: Helvetica, Arial, sans-serif;</kbd>&nbsp;to a rule modifying the&nbsp;<kbd>body</kbd>&nbsp;of my page.</p>
+<p>But, since we have to import a google font,&nbsp;I am going to use the font Rock Salt for my headlines, that is <em><strong>not</strong></em> a web safe font and will probably not be on most computers. I have to do an extra step to make it available.</p>
+<p>Google Fonts makes it very easy to add your fonts. Find your the Rock Salt font in Google Fonts: <a href="http://www.fonts.google.com">www.fonts.google.com</a> and click the red plus.</p>
+<p><img src="/content/enforced/325226-Online.2017.Fall.WDD100.11/Course%2BFiles/googlefont1-new.jpg?_&amp;d2lSessionVal=3HWFKkoHpLlNBis0aj2MNkAE0&amp;ou=373159&amp;_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="googlefont1" title="googlefont1" data-d2l-editor-default-img-style="true" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+<p>I usually search and choose all of the fonts&nbsp;that look interesting to me, or that I might use (at least 3 fonts) and then find the black bar on the bottom of your screen and click on it to expand it. Then click on the "<em><strong>@import</strong></em>" tab.</p>
+<p>Copy the line that starts with '@import' and add it to the&nbsp;<strong>top</strong>&nbsp;of your &lt;style&gt; block. It should look something like this:</p>
+<p><img src="/content/enforced/373160-Online.2018.Winter.WDD100.12/googlefontsimport.jpg?_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="" title="" width="450" height="450" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>This will be pasted at the top of the <em><strong>style.css</strong></em> page</p>
+<p>*note: google fonts can be imported with multiple fonts in one statement.&nbsp; Less is best.&nbsp; They can be imported as a &lt;link&gt; in the &lt;head&gt;&nbsp;section of the html section&nbsp;<strong>or</strong>&nbsp;in the style section (css).</p>
+<p>Now you can use that font just like normal, ie:&nbsp;<kbd>font-family: 'Rock Salt', cursive;</kbd></p>
+</div>
+<h2><strong>Step 02</strong></h2>
+<p>Often the default font sizes are fine...but there are times when they need to be changed. For example it's good for the links used for navigation to be nice and easy to click, so lets increase their size. Let's make it 110% of normal.</p>
+<p>(Remember the 'em' unit of measurement for fonts.&nbsp;<strong>1em</strong>&nbsp;= the normal size of your font...so 1.1em = 110%)</p>
+<div><img src="/content/enforced/325226-Online.2017.Fall.WDD100.11/Course%20Files/Images/paddingexample.jpg?_&amp;d2lSessionVal=3HWFKkoHpLlNBis0aj2MNkAE0&amp;ou=373159&amp;_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="paddingexample" title="paddingexample" style="display: block; margin-left: auto; margin-right: auto;" /></div>
+<div class="callout">
+<p>Nice to have those fonts in there :) Now though notice what is happening anywhere that you have made colored boxes around anything. Here is an example:</p>
+<p>The font and image are pressed right up against the edge of the border and it looks...not great. Lets fix it.</p>
+<p>The space between the content in a box and the edge of a box is called&nbsp;<em><strong><a href="http://www.w3schools.com/cssref/pr_padding.asp" target="_blank" rel="noopener noreferrer">padding</a></strong></em>. We can add padding to one or all sides. for example if I wanted to add some padding to all 4 sides of the box I would do something like this:</p>
+<p>sec1, .sec2, footer {&nbsp;</p>
+<p><kbd>padding: 1em;</kbd></p>
+<p><kbd>}</kbd></p>
+<p>Use&nbsp;<kbd>padding</kbd>&nbsp;to space out the content on your page from any edges or borders where it is needed.&nbsp; &nbsp;Put&nbsp;<strong>10px padding</strong>&nbsp;on both your&nbsp;<strong>paragraphs</strong>&nbsp;and&nbsp;<strong>headlines also</strong>.</p>
+<p>It is best to use padding rather than hard margins at this point.</p>
+</div>
+<h2><strong>Step 03</strong></h2>
+<p>Proximity is a design principle that we rely on to help to know which elements on our page are related to each other by their distance from each other. Let's make sure that visitors to our site know that the headlines and paragraphs are related to each other by bringing them a little closer together. (The default spacing has them just a little far apart.) Adjust the&nbsp;<kbd>line-height</kbd>&nbsp;of your headlines to bring them closer to the paragraphs they belong to. You could even play with the line-height of your paragraphs to see how it affects readability as well.</p>
+<div class="callout">
+<p>If you are having a hard time getting your headlines to come closer to your paragraphs try this: right click on one of your headlines and select "Inspect". An area on your browser should open at either the side or bottom of the screen that shows both the html and the styles for that element. This is a powerful tool.</p>
+<p>When I did this I saw the following:</p>
+<p><img src="/content/enforced/325226-Online.2017.Fall.WDD100.11/Course%2BFiles/inspect%20(1).jpg?_&amp;d2lSessionVal=3HWFKkoHpLlNBis0aj2MNkAE0&amp;ou=373159&amp;_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="inspect" title="inspect" data-d2l-editor-default-img-style="true" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<ul>
+<li>Notice that browser is showing me the size of the element in pixels.</li>
+<li>It's also showing me the area it takes up both for size (blue highlight) and margins (brown highlight). If there were any padding it would be green.</li>
+<li>All the styles are shown. The third arrow shows styles I defined.</li>
+<li>The last arrow shows several styles I&nbsp;<strong>did not</strong>&nbsp;define. Notice it says "user agent stylesheet" That's just another way of saying "browser default styling".</li>
+</ul>
+</div>
+<p>The highlighted area and the styles are both showing in different ways that&nbsp;<kbd>&lt;h2&gt;</kbd>&nbsp;has top and bottom margins defined by default. Those defaults are probably interfering with your desire to move the headline closer to the paragraph.</p>
+<p>Another way of seeing this can be found if you scroll down in the area showing the styles...you should see something like in the Box model figure.</p>
+<p></p>
+<img src="/content/enforced/325226-Online.2017.Fall.WDD100.11/Course%2BFiles/box-model.jpg?_&amp;d2lSessionVal=3HWFKkoHpLlNBis0aj2MNkAE0&amp;ou=373159&amp;_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="boxmodel" title="boxmodel" data-d2l-editor-default-img-style="true" width="346" height="283" style="display: block; margin-left: auto; margin-right: auto;" />
+<div>
+<h2><strong>Section 04</strong></h2>
+<p>If you refer back to the wireframe you will notice that the paragraphs in each of the sections only take up about half the screen. Let's make them do that now. We can use the&nbsp;<a href="http://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank" rel="noopener noreferrer">width</a>&nbsp;property again to do this. You should have placed the headline and paragraph together in a box and given it a class to identify it. If you didn't do that now. My code looks like this</p>
+<p>Last week,&nbsp;we grouped and identified things. We placed the headline, and paragraph in the first section in a &lt;div&gt; with a class of leftcol, then I use that same class for the left column in section2. Then I did the same thing for the content that will be in the right column (once we learn positioning).&nbsp;</p>
+<p>Layout will go much easier if your HTML is well structured. Think of a body and skeleton. If the bones in your elbows bent backwards instead of forwards you could scratch your own back easily, but you would have a really hard time eating :) You could get it done, but it's better to have a structure that makes it easy. Poor HTML structure will make positioning and laying out your site&nbsp;<strong>much</strong>&nbsp;more work.</p>
+<h2><strong>Step 05</strong></h2>
+<div class="callout">
+<p>Since the site plan wireframe shows a left column and a right column for section 1 and section 2 and the footer parts, we have to first set up in the html page those left and right parts.&nbsp; Then we can go to the style.css page and start setting up the page layout.&nbsp; Call your elements up in divs and call them: leftcol and rightcol</p>
+<p><img src="../sec1.jpg" alt="" title="" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></p>
+<p>You&nbsp; won't see any changes yet on the page.&nbsp; Remember, we are just setting up to be able to move things around in the style.css page.</p>
+<p>Now, do the same things for section 2 and the footer like this:</p>
+<p><img src="../sec2andfooter.jpg" alt="" title="" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" data-d2l-editor-default-img-style="true" /></p>
+<p>Now that we have the html portion set up, go to the style.css page and do the following:</p>
+<p>Looking at the wireframe from the Site Plan, we will&nbsp;<strong>set a width of 48%&nbsp;</strong>on the left and right columns.&nbsp; This will look like this:</p>
+<p>.leftcol, .rightcol {</p>
+<p>width: 48%;</p>
+<p>}</p>
+<p>Make sure that you put one space between the , comma and .rightcol ... an important rule to remember: one space after a :&nbsp; and one space before a { and always one space only after a comma, in your code.</p>
+</div>
+<h2><strong>Step 06</strong></h2>
+<p>You are to also add<em><strong> font-size</strong></em> and<em><strong>&nbsp;line height</strong></em>&nbsp;to your headlines, paragraphs, and to your nav li your nav a items to adjust their size and the line spacing... <em><strong>line spacing can never be less than 1em</strong></em>, but can be larger if desired.</p>
+<p>We are now going to split the nav into&nbsp;<em><strong>3 parts</strong></em>&nbsp;at this point.... nav { , nav a { , and nav li { .&nbsp;</p>
+<p>The&nbsp;<strong>nav</strong>&nbsp;will contain the background-color and a <strong>padding of 1em.</strong></p>
+<p>The&nbsp;<strong>nav li</strong>&nbsp;will have font-family, font-size, and&nbsp;<strong>list-style-type: none;</strong>&nbsp;(this removes the dot from the list items).&nbsp;</p>
+<p>The&nbsp;<strong>nav a</strong>&nbsp;will have text color (color), line-height, and put&nbsp;<strong>text-decoration: none;</strong>&nbsp;(this removes the underline).&nbsp;&nbsp;</p>
+<p></p>
+<h2>Part II:&nbsp;&nbsp;&nbsp;Finishing&nbsp;Touches</h2>
+<hr />
+<h2>Activity&nbsp;Instructions</h2>
+<p>Estimated Time: 45 minutes</p>
+<div>
+<div class="callout">
+<p>This activity will use the following css concepts or properties (review the links if you do not remember these from Khan academy):</p>
+<ul>
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">Flexbox</a>&nbsp;or&nbsp;<a href="http://www.w3schools.com/css/css3_flexbox.asp" target="_blank" rel="noopener noreferrer">W3Schools Flexbox</a></li>
+<li><a href="http://www.w3schools.com/cssref/css3_pr_flex-flow.asp" target="_blank" rel="noopener noreferrer">flex-flow</a></li>
+<li><a href="http://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank" rel="noopener noreferrer">justify-content</a></li>
+<li><a href="http://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank" rel="noopener noreferrer">flex</a></li>
+<li><a href="http://www.w3schools.com/cssref/pr_margin.asp" target="_blank" rel="noopener noreferrer">margin</a></li>
+<li><a href="http://www.w3schools.com/cssref/pr_padding.asp" target="_blank" rel="noopener noreferrer">padding</a></li>
+<li><a href="http://www.w3schools.com/css/css_combinators.asp" target="_blank" rel="noopener noreferrer">CSS Descendant Selectors</a></li>
+<li><a href="http://www.w3schools.com/cssref/pr_dim_line-height.asp" target="_blank" rel="noopener noreferrer">CSS Line-height</a></li>
+<li><a href="http://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank" rel="noopener noreferrer">CSS pseudo classes</a></li>
+</ul>
+</div>
+<p>Now, we&nbsp;finally&nbsp;will put in the finishing touches and layout of the Home page. After we finish the layout of our page it should look very similar to the wireframe, and the Home page will be&nbsp; complete.</p>
+<p>Review again the&nbsp;<a href="https://byui-cit.github.io/wdd100/images/wireframe-boxes.jpg" target="_blank" rel="noopener noreferrer">wireframe</a>&nbsp;for the Dry Oar site from the Site Plan. We will start from the top and work down to position all of the elements that need it. The logo&nbsp;and&nbsp;navigation&nbsp; will be done last since it is a little more complicated.</p>
+<p>Here is a step by step video for you if you need a little help along the way:</p>
+<p style="text-align: center;"><iframe width="700" height="450" src="https://www.youtube.com/embed/sJ84RgAYuEs?feature=oembed&amp;rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
+<h2><strong>Step 01</strong></h2>
+<p>First let's consider the banner:&nbsp; Last week we&nbsp;set the sizes of the images: your logo should be somewhere between 150 and 200px depending on the image.&nbsp; The <strong>banner</strong> has a width of&nbsp;<strong>100%</strong>&nbsp;on that image.&nbsp;And, your img1 and img2 should be about 425-450px and if the images are not the same height, set the height to between 300-350px.</p>
+<h2><strong>Step 02</strong></h2>
+<p>Now lets position the first section of headline, paragraph and image.</p>
+<p>You should have grouped elements together in previous weeks...the code for this section should look something like this:</p>
+<figure><img src="/content/enforced/373160-Online.2018.Winter.WDD100.12/layoutpageimghtml1.jpg?_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="" title="" data-d2l-editor-default-img-style="true" style="display: block; margin-left: auto; margin-right: auto;" /></figure>
+<p>Notice how each section has a&nbsp;<kbd>leftcol</kbd>&nbsp;and&nbsp;<kbd>rightcol</kbd>&nbsp;div and we have set a width on them as well to about 48%. Now all we need to do is get them to line up horizontally.</p>
+<div class="callout">
+<p>We are going to set up the page using&nbsp;css flexbox.&nbsp; &nbsp;<em><strong><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">Flexbox</a></strong></em>&nbsp;is good when we have several elements that we need aligned as a row or column. In fact it makes it really easy to switch from column to row and back. Flexbox relies on setting up a flex container or parent first. In our case the containers will be our rows which are made in the HTML with&nbsp;<code>&lt;section&gt;</code>s.</p>
+<p>The link I provided above is to a great resource about flexbox from CSS-Tricks:&nbsp;<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">A Complete Guide to Flexbox</a>. You really should take a minute to look it over.</p>
+<p>Add the following property&nbsp;<kbd>display: flex;</kbd>, to a rule in your css to modify&nbsp;sec1, sec2, and footer on your page to turn them into flex containers. In my case that rule would look like the following:</p>
+<pre><code>
+.sec1, .sec2, footer {<br />     padding: 1em;
+     display: flex;
+}    
+</code></pre>
+<p>Now all of the immediate children will become flex-items or children.&nbsp; You should see an immediate change once you make your first section flex. You should end up with something that looks like this:</p>
+<p>Not bad for one line of css right? It automatically reformatted into a row. This is due to the default values for flex. They are set to&nbsp;<kbd>row</kbd>&nbsp;and&nbsp;<kbd>nowrap</kbd>. The row is perfect for what we are trying to do, but the&nbsp;<kbd>nowrap</kbd>could cause us problems.</p>
+</div>
+<h2><strong>Step 03</strong></h2>
+<p>Begin fixing our small screen view by adding a&nbsp;<strong><kbd>flex-flow: row wrap;</kbd></strong>&nbsp;line just below the line that setup our flex container (<strong><kbd>display:flex;</kbd></strong>). This will&nbsp;<em>allow</em>&nbsp;our flex items to wrap, but it won't&nbsp;<em>make</em>&nbsp;them wrap. Flex items by nature are allowed to shrink and grow with the space they have available. This is controlled with the&nbsp;<a href="http://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank" rel="noopener noreferrer"><kbd>flex</kbd></a>&nbsp;property.</p>
+<p>Add&nbsp;<strong><kbd>flex: 1;</kbd></strong>&nbsp;to both the left and right divs in your section row. (This&nbsp; would be <strong>.leftcol</strong> and <strong>.rightcol)</strong>. This will let each of them take up 1 share of the space...so they will be the same size.</p>
+<p>We need one last bit of css to fix our small screen view.</p>
+<p>Lets set a limit on how small the right and left columns can become. We can use the&nbsp;<code>flex</code>&nbsp;property for this.&nbsp; Above,&nbsp; I showed you the simplest way to use&nbsp;<code>flex</code>. Now we will add this&nbsp;<strong><code>flex: 1 0 15em;</code></strong>&nbsp;This would mean start with the item at 15em width, but let it grow to fill all available space (first 1). Don't let it shrink (middle 0) smaller than 15em though. Add that to your css.</p>
+<div class="callout">My css&nbsp;looks like this:
+<pre><code><strong>.leftcol, .rightcol { </strong><br /><strong>width: 48%; </strong><br /><strong>flex: 1 0 15em; </strong><br /><strong>}</strong>&nbsp;</code></pre>
+</div>
+<div class="callout">
+<p>To help&nbsp;your images resize to fit in the box you have them in make sure you&nbsp;add the following rule in your css:<code><br />To help all images to be responsive when the screen size is changed, <br />add this element:<br />
+<strong>img {
+</strong></code></p>
+<p><strong><code>    max-width: 100%;
+</code></strong></p>
+<p><strong><code>}</code></strong><code>       </code></p>
+<p>This will make also make sure that none of your images can ever be larger than the box they are in.</p>
+<p style="text-align: center;"><img src="../sec1and2flexed.jpg" alt="" title="" style="max-width: 100%;" data-d2l-editor-default-img-style="true" /></p>
+</div>
+<h2 style="text-align: left;"><code><br /></code><strong>Step 04</strong></h2>
+<p>Looking good! One thing is bugging me though. The headline and paragraph in the first section is aligned at the top of that space...it would look much better closer to the center. This is another thing that flex excels at.</p>
+<div class="callout">
+<p>Alignment in flexbox is governed by two properties.&nbsp;<a href="http://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank" rel="noopener noreferrer"><kbd>align-items</kbd></a>&nbsp;and&nbsp;<a href="http://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank" rel="noopener noreferrer"><kbd>justify-content</kbd></a>.</p>
+<p>When we set the&nbsp;<strong><kbd>flex-flow</kbd></strong>&nbsp;to row we were actually setting up the primary axis direction: row (or horizontal). This is significant because alignment along the primary axis is controlled with&nbsp;<kbd>justify-content.&nbsp; We will set this to justify-content: center;&nbsp;</kbd></p>
+</div>
+<p>Since our primary axis is row (horizontal), we change the cross-axis (vertical) alignment with&nbsp;<kbd>align-items</kbd>. Add the following to your css for the flex container:<strong>&nbsp;<kbd>align-items: center;</kbd></strong>. Just like that our paragraphs will always be centered vertically...no matter how the width of the page changes!</p>
+<h2><strong>Step 05</strong></h2>
+<p>One last thing and our rows will be done.&nbsp; Sometimes the paragraphs and images are smushed together. Add some margin around them to make sure this doesn't happen.</p>
+<div class="callout">
+<pre></pre>
+<pre><code>Now your code should look like this:<br />
+.leftcol, .rightcol {
+    width: 48%;
+    flex: 1 0 15em;
+    margin: .5em;
+}<br />
+</code></pre>
+<pre>.sec1, .sec2, footer { <br />display: flex; <br />flex-flow: row wrap;<br />justify-content: center;<br />align-items: center;<br />padding: 10px;<br /> }</pre>
+</div>
+<h2><strong>Step 06</strong></h2>
+<p>Finishing the footer:&nbsp; &nbsp;There should be space around the icons. This is similar to what we have done before.&nbsp; You should be able to figure it out.</p>
+<p>You will probably need to add some&nbsp;<kbd><em><strong>padding of about 10px </strong></em>on the<em> <strong>.socialmedia</strong></em> along with<em><strong> float: right. </strong></em>Set the<em> <strong>width of the .icon </strong></em>to<em><strong> 50px or 75px </strong></em>whichever size you like better.&nbsp;</kbd></p>
+<h2>Now the Navigation</h2>
+<div class="callout">
+<p>We've done a lot of work on our site&nbsp;so far and it's looking pretty close to that wireframe. The final portion that needs our attention is the header. I have to admit I'll be really happy when we get the page finished as well!</p>
+<p>The code that I am basing this activity on looks like this: (you may want to adjust yours if it is not similar)</p>
+<figure><img src="/content/enforced/373160-Online.2018.Winter.WDD100.12/navlogocode.jpg?_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="" title="" data-d2l-editor-default-img-style="true" /></figure>
+<p>The top of my page looks like this:</p>
+<figure><img src="/content/enforced/373160-Online.2018.Winter.WDD100.12/navlogo.jpg?_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="" title="" data-d2l-editor-default-img-style="true" /></figure>
+</div>
+<h2><strong>Step 07</strong></h2>
+<div class="callout">
+<p>Let's make our links flow<em><strong> across the page horizontally first</strong></em>. It's important to remind ourselves why they currently look the way they do...list items are<em> block element</em>s. So&nbsp;we will <strong>change them to inline-block</strong> elements...but we also saw above that Flexbox can make columns reflow as rows...and we also gain some nifty alignment tools. Lets use that to layout our navigation. Remember that for flexbox we need to identify the items we want to&nbsp;<strong>display: inline-block;</strong> using <strong>nav li</strong> and &nbsp;then find their parent (in this case the&nbsp;<strong><code>nav ul</code></strong>&nbsp;and&nbsp;put our&nbsp;<strong><code>display: flex;</code></strong></p>
+</div>
+<h2><strong>Step 08</strong></h2>
+<p>,&nbsp;</p>
+<div class="callout">
+<p>For my example site I wanted the navigation font to be a bit larger than normal...so I added&nbsp;<kbd>font-size: 1.2em;</kbd>&nbsp;to my&nbsp;<kbd>nav</kbd>&nbsp;li rule.&nbsp; I also want to add a font family which also goes in the nav li.&nbsp; If you don't already have it, add list-style-type: none to nav li as well.</p>
+<p>Increasing the height is a little trickier. If you instead of adding a&nbsp;<kbd>height:3em; we will add line-height so that the text will be centered vertically.&nbsp;&nbsp;</kbd>&nbsp;it will make the nav box 3X the size of the text...and it will look like this:</p>
+<p><img src="/content/enforced/373160-Online.2018.Winter.WDD100.12/inline-block.jpg?_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="" title="" data-d2l-editor-default-img-style="true" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>We also need to add to <strong>nav a</strong>, <strong>padding: 1em 1em</strong>; (the sizing can vary smaller... this sizing is the space around the page name:&nbsp; the first number is vertically and the second number is for&nbsp; horizontally.&nbsp; Make sure you also have&nbsp;<strong>text-decoration: none;</strong> finishing the items in <strong>nav a</strong>.</p>
+</div>
+<h2><strong>Step&nbsp;9</strong></h2>
+<p>The next thing we need to do is move the whole navigation bar up...so it is under the logo. While there are several ways to do this, the simplest would be to adjust the&nbsp;<kbd><strong>margin-top</strong> in <strong>nav {</strong></kbd>.&nbsp; &nbsp;This will be a negative number to move my blue bar up until none of the black at the top will show (not past that).&nbsp; &nbsp;Mine&nbsp;requires a <strong>margin-top: -115px;&nbsp;</strong> We will also add a <strong>padding of 1em;</strong> to the<strong> nav&nbsp; {</strong></p>
+<p>Now my nav words are laid out across the nav bar, but they are underneath the logo image so they need to move to the right.&nbsp;&nbsp;This will be done by adding <strong>padding-left</strong> until the page names are no longer under the nav image and they are neatly spaced across the page.&nbsp; The amount your nav items must move depends on different factors such as the font, font-size, padding and line height.... mine took a padding-left of 165px; in the <strong>nav li</strong>.</p>
+<div class="callout">
+<p>You may notice that there is a small gap between the navigation bar and the banner image below it. This is because we placed our links in an unordered list and the default styling of lists is to have some margin on the top and bottom to space it out from things around it.</p>
+<p>If you have this issue, you can remove it by adding the following&nbsp;&nbsp;to the&nbsp;<strong><kbd>nav ul margin: 0; </kbd></strong></p>
+<p>&nbsp;(Read that selector as "Find any unordered lists which are inside of nav elements and set their margin to 0)</p>
+</div>
+<p><img src="/content/enforced/373160-Online.2018.Winter.WDD100.12/navset1.jpg?_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="" title="" data-d2l-editor-default-img-style="true" /></p>
+<div class="callout">
+<p>We are getting&nbsp;really close, but we still have some issues with that logo.&nbsp; Notice that part of the logo image is under the banner image so we will need to fix that.</p>
+<p>In your <strong>#logo</strong> add <strong>position: relative;</strong>&nbsp; That made the image pop out from under.&nbsp; We are also going to add <strong>10px</strong> to the<strong> top:</strong> and <strong>left:</strong> of the #logo to bring the logo away from the edge on the left and the top.</p>
+<p>The image I&nbsp;am using has what is known as a transparent background...but we are going to put a&nbsp; background color with a border around the logo image.&nbsp; &nbsp;You can add a background-color: white; or a color that better fits with your image and theme.&nbsp; Now we will finish the logo off&nbsp;by adding a border&nbsp;to the #logo:&nbsp;&nbsp;<strong>border: 2px black solid;</strong></p>
+</div>
+<h2><strong>Step 10</strong></h2>
+<p>Our page is looking great! Only a couple of last tasks left. First is to address a usability issue. You should never make a user guess about what elements are links and what aren't. We should give them plenty of visual hints.</p>
+<div class="callout">
+<p>One thing we can take advantage of is&nbsp;<a href="http://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank" rel="noopener noreferrer">pseudo-classes</a>. Click on that link and look at the examples there...go on...I'll wait.</p>
+<p>Pseudo classes let us target specific states of elements, such as link. Links have 4 states: link (normal, nothing has happened), visited (link has been clicked on), active (link is currently being clicked), and&nbsp;<strong>hover</strong>&nbsp;(mouse is on link, but not clicking)&nbsp;&nbsp;</p>
+<p>We will be setting only the&nbsp;&nbsp;<em><strong>hover rule</strong></em>.&nbsp;</p>
+<p>This means that when you hover the cursor over a page name, something particular will happen:&nbsp; A color change of font, a background-color change, a button will appear, etc.&nbsp; This will be done by adding a new element for a rule:&nbsp;<em><strong> nav a:hover {&nbsp;</strong></em> There cannot be a space between the a: and the hover... that is critical.&nbsp; I like to add a button to show on hover with a background-color and a text color.&nbsp; My code for this would be:</p>
+<p>This means that when you hover the cursor over a page name, something particular will happen:&nbsp; A color change of font, a background-color change, a button will appear, etc.&nbsp; This will be done by adding a new element for a rule:&nbsp;<strong> nav a:hover {&nbsp;</strong> There cannot be a space between the a: and the hover... that is critical.&nbsp; I like to add a button to show on hover with a background-color and a text color.&nbsp; My code for this would be:</p>
+<p><span style="font-size: 14pt;"><strong>nav a:hover {</strong></span><br /><span style="font-size: 14pt;"><strong> background-color: #00ff00;</strong></span><br /><span style="font-size: 14pt;"><strong> color: #ff4000;</strong></span><br /><span style="font-size: 14pt;"><strong> border-radius: 5px;</strong></span><br /><span style="font-size: 14pt;"><strong> box-shadow: 5px 5px 5px black;</strong></span><br /><span style="font-size: 14pt;"><strong> }</strong></span></p>
+</div>
+<p>This finishes our nav and logo setup... should look something like the following:</p>
+<p><img src="/content/enforced/373160-Online.2018.Winter.WDD100.12/navbardone.jpg?_&amp;d2lSessionVal=KnbGvAm38qFjrMwzMgjCAnASP&amp;ou=373160" alt="" title="" data-d2l-editor-default-img-style="true" /></p>
+<h2><strong>Step 11</strong></h2>
+<p>View your page to make sure that all of your images show and are the right size.&nbsp;&nbsp;Lastly, take a critical look at your page to make sure that it has <em><strong>visual appeal:</strong></em> The fonts work well and are easily readable, the colors work together nicely, that the page follows the layout we did in the activity (this layout is according to the wireframe in the Site Plan).</p>
+<h2><strong>Step 12</strong></h2>
+<p>Go to the next page and enter the&nbsp;collaborate/share&nbsp; URL to your site into&nbsp;the comment section and submit your activity into iLearn.&nbsp;to make sure the webpage displays correctly.&nbsp;</p>
+<h4>Grading</h4>
+<div class="highlight2">
+<p><strong>This activity will be graded using the following rubric (other items named in the directions are expected to be a part of your page even if you do not see them here in the grading rubric!):</strong></p>
+<ul>
+<li>At least 3 google fonts were imported and used on the page in place of the original fonts and they are used in font-family for the headlines, paragraphs, and navigation (a font-family has at least 2 or more fonts that degrade to web-safe fonts.)</li>
+<li>Make sure that you imported fonts are showing properly in the headlines and paragraphs and navigation and that the sizes you have set are easy to .&nbsp;</li>
+<li>Make sure that you navigation and logo are set up properly to show similar to the example and that the links on your page all work properly.&nbsp;</li>
+<li>Make sure that you have your sec1, sec2, and footer are set up with .leftcol, .rightcol and show properly on the page.&nbsp;</li>
+<li>Make sure that your banner image is sized to 100% so that it fills the width of the page and that the img { is also set at 100%.</li>
+<li>Positioning of elements looks like that in the wireframe from the Site Plan and follows the activity directions.&nbsp; &nbsp;The home page must be&nbsp;laid out this way.</li>
+<li>Navigation links are interactive&nbsp;and change on hover.&nbsp; The navigation links should be set up properly and stay within the website.&nbsp; The social media icons should be set up properly, floated right with enough&nbsp;padding to space them from the edge and each other and sized properly.&nbsp; The social media links must work properly, opening on a new page to the actual social media website.&nbsp;</li>
+<li>The HTML is well formed and without errors and the page is visually appealing.&nbsp; This finishes the Home page!</li>
+</ul>
+</div>
+</div>
+</div>
+<script src="../Web%20Files/course.js"></script>
+</div>
+</div>
+</body>
+</html>
