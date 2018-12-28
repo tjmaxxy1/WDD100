@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+	<title>BYU-Idaho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../Web%20Files/course.css" />
+<style>
+.wrapper {
+margin-left: 25px;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<div id="header" style="text-align: right;"><img src="../Web%20Files/smallBanner.jpg" alt="Course Banner" /></div>
+<div id="article">
+<h1>Week 01: Setup Software Used In Course</h1>
+<hr />
+<h2>Activity&nbsp;Instructions</h2>
+<p>Estimated Time: 15 minutes</p>
+<p>One of our goals for this class is to allow you to create a real website accessible with a browser.&nbsp; This, as you will discover in the readings and videos for this week, requires you to have what is known as a host.&nbsp; Most hosts cost money, but not all.&nbsp; For this class, we will be using a free service called&nbsp;<strong><a href="https://glitch.com/" target="_blank" rel="noopener noreferrer">Glitch.com</a>&nbsp;</strong>. Using this service allows you to create your website with their text editor, save the website, upload the images for the website, and even share the website with an instructor or fellow student for collaboration.</p>
+<p>There are a few steps we will need to go through to get everything set up so you are ready to begin..</p>
+<p>Watch the video below:&nbsp;</p>
+<p style="text-align: center;"><iframe width="650" height="350" src="https://www.youtube.com/embed/1smJ-XX7piQ?feature=oembed&amp;rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
+<p style="text-align: center;"></p>
+<h2>Step 01: Glitch Login&nbsp;</h2>
+<p>Visit the&nbsp;<a href="https://glitch.com/" target="_blank" rel="noopener noreferrer">Glitch</a>&nbsp;website and click on the&nbsp;<strong>Sign in</strong>&nbsp;button in the top right corner of the screen. Glitch lets you sign in using either facebook or GitHub (I like GitHub and use that one)... both are free to use. (If you choose to use GitHub, you would need to have a github account). Click on the Sign in button for the account you would like to use. You may see a screen requesting permission for Glitch to access the account you have chosen to use.</p>
+<h2>Step 02: 'Remix' the Starter project</h2>
+<p>Next we need to create a&nbsp;project for you to use this semester. Glitch makes use of a concept called a 'Remix'. This is essentially taking an existing Glitch project and making a copy of it that you can use and edit. I have prepared a project for this class that you should 'Remix'. Visit this&nbsp;<span style="color: #741b47;"><a href="https://glitch.com/edit/#!/wdd100-starter?path=README.md:1:0" target="_blank" rel="noopener" style="color: #741b47;">Starter Project</a></span>&nbsp;&nbsp;<span style="color: #741b47;"><em><strong>AFTER</strong></em></span>&nbsp;logging into Glitch and then tap the '&nbsp;<span style="color: #741b47;"><em><strong>Remix This</strong></em></span>' button in the top right corner of the window. This will create a personal copy of it for you.</p>
+<p style="text-align: center;"><img src="../glitch-remix.jpg" alt="" title="" style="max-width: 100%;" data-d2l-editor-default-img-style="true" /></p>
+<div>
+<figure style="text-align: center;">
+<figcaption>Create a New Project</figcaption>
+</figure>
+</div>
+<h2>Step 03: Become familiar with the interface</h2>
+<p>After creating a project you should see something similar to the following:</p>
+<div>
+<figure style="text-align: center;"><img alt="Glitch editor" src="http://byui-cit.github.io/wdd100/images/glitch-project-tour.jpeg" title="Glitch editor" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;" />
+<figcaption>Create a New Project<br /><br /></figcaption>
+</figure>
+</div>
+<ul>
+<li style="list-style-type: none;">
+<ol>
+<li>This is the random name that Glitch chose for your project. You can change this by clicking on the name.</li>
+<li>This is the list of files in the project. Notice in the image that&nbsp;<em><span style="color: #741b47;"><code>index.html</code></span></em>&nbsp;is selected and open in the editor. If&nbsp;<code>index.html</code>&nbsp;is not open in your screen tap on it to open it.<img src="/content/enforced/439093-Online.2018.Spring.WDD100.09/share%20collaborate2.jpg" data-d2l-editor-default-img-style="true" width="410" caption="false" style="float: right;" height="341" /></li>
+<li>This is the code editor. It is where we will spend most of our time writing HTML and CSS</li>
+<li>This is where you will click to preview your page. It will open a new tab where you can see the results of the code you write.</li>
+<li>This is where you can add a new file to your project.</li>
+</ol>
+<p>Before you proceed, email your instructor your share collaborate link so that you can be helped&nbsp;</p>
+<p>real time throughout the course.&nbsp; Only do this once, or if your instructor asks you to send again.&nbsp; Even though you email the instructor your share/collaborate link in week 1, you must upload the share collaborate link each week to ilearn, not the instructor.&nbsp; Follow the directions in the box to the right:</p>
+</li>
+</ul>
+<p></p>
+<p>Press the share button and choose the 3rd choice in the list:</p>
+<p>There are a few steps we will need to go through to get everything set up so you are ready to begin..</p>
+<h2>Step 4: Review the&nbsp;<code>index.html</code>&nbsp;file</h2>
+<p>Below is the HTML code that is currently in the&nbsp;<code>index.html</code>&nbsp;file.</p>
+<div class="callout">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;WDD 100&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;link rel="stylesheet" href="/styles.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+       &lt;!-- logo will go here --&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="aboutme.html"&gt;About Me&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;<br />       &lt;!-- wide banner image will go here --&gt;
+   &lt;/header&gt; <br />&lt;/body&gt; <br />&lt;/html&gt; </code></pre>
+</div>
+<p>It's ok if this doesn't make sense yet. We will eventually learn about what each line in this code does. For now let's take a look at the page this code created. Click on the "Show" button. You should see a very basic page with only two links.</p>
+<h2>Step 5: Settings that can change</h2>
+<img src="../glitchchanges.jpg" alt="" title="" style="float: right;" width="293" height="265" />
+<p>Let's make one more change to the Glitch settings. In the top right corner of the screen there are two icons. The far right one let's you see some information about Glitch...it mine looks like a fish. The other is for some User options. Click on that one. You should see something similar to the image below. Uncheck "Refresh App", and check "Wrap Text"</p>
+<div>
+<figure>
+<figcaption>Change default settings</figcaption>
+</figure>
+</div>
+<p>You can also change Glitch to use a dark theme instead of the light one from that menu as well if you prefer that.</p>
+<div>
+<p>Leave auto-refresh on (this will allow glitch to update changes for you automatically so you won't have to refresh your screen all the time)&nbsp;&nbsp;</p>
+<p>Leave the Wrap Text on as well.&nbsp; This will allow text to wrap at the end of lines as you are typing the way they need to.</p>
+</div>
+<h2>Other Software</h2>
+<div>
+<p>Here is a list of other software we will use this semester. These are all web based and require no installation. Some would require account creation. Your instructor will give you more details when it is time to use them:</p>
+<ul>
+<li><a href="https://www.khanacademy.org/signup?continue=%2f" target="_blank" rel="noopener">Khan Academy</a> We will be using Khan Academy as a tutorial for html and css in the course instead of purchasing a text.&nbsp; Although not required to register with Khan Academy, you are welcome to do so that your progress will be recorded with them.</li>
+<li><a href="https://app.moqups.com/login" target="_blank" rel="noopener noreferrer">Moqup.com</a>&nbsp;A great wireframe creation choice.&nbsp; They also have a free educational account available.&nbsp; Obtain <strong>Free upgrade </strong>by<strong>:</strong></li>
+</ul>
+<div>
+<p>Please ask your students to sign-up here using their school email address:&nbsp;<span style="color: #1155cc; font-family: arial, helvetica, sans-serif; font-size: 14pt; text-decoration: underline;"><a href="http://t.yesware.com/tt/52d65ac836859c4f73b7b305ac08ae986627073d/df0c8193e42b5d3802a7c1879ca1cb9b/e62d46976af75d8f5a2ce1a89a95ffc1/www.invisionapp.com/education-signup" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable">http://www.invisionap<wbr />p.com/education-signup</a></span></p>
+<p>Code:&nbsp;<strong>56-73-13-19</strong></p>
+<p>It's that simple! <strong>These instructions are for new accounts</strong>. If a student already has an account, just have them email me&nbsp;<strong>with their expected graduation date</strong>. I will make sure they get their upgrade.</p>
+<p>Doing this will allow <strong>UNLIMITED</strong> Prototypes in your account, rather than just 3. This will help you to more easily complete your course work.&nbsp; Do this now so your account will be ready for an activity later in the course.&nbsp; This image shows more detailed instructions</p>
+</div>
+<p><a href="https://coolors.co/" target="_blank" rel="noopener noreferrer"></a></p>
+<ul>
+<li><a href="https://coolors.co/" target="_blank" rel="noopener">coolors.co</a> &nbsp; A&nbsp;color theme chooser we will use for your site plan activity</li>
+</ul>
+</div>
+<h2>Step 6: About me</h2>
+<p>Now, go to&nbsp; the&nbsp; <a href="/d2l/le/content/467896/viewContent/6583027/View" target="_self">About Me Activity</a>&nbsp; for the rest of the instructions and requirements for this activity.</p>
+<p style="text-align: center;"></p>
+</div>
+<!-- end #article --></div>
+<p>
+<script src="../Web%20Files/course.js"></script>
+</p>
+</body>
+</html>
