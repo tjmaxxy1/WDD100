@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+	<title>W04.03 Getting Started: Create the Home Page in HTML - Instructions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/solarized-light.css" />	
+<link rel="stylesheet" href="../Web%20Files/course.css" />
+<style>
+.highlight2 {
+background-color: #FFF8DC;
+}
+.grading {
+background-color: #80ff80;
+}
+.example {
+padding: 15px;
+background-color: #99ccff;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<div id="header"><img src="../Web%20Files/smallBanner.jpg" alt="Course Banner" /></div>
+<div id="article">
+<h1>Starting&nbsp;the Home Page in HTML</h1>
+<hr />
+<div>
+<h2>Activity Directions</h2>
+<h5>Estimated Time:&nbsp;45-60 minutes</h5>
+<div>
+<div class="callout">
+<p>This activity will use the following new html concepts or tags (review the links if you do not remember these from Khan academy):</p>
+<ul>
+<li><a href="http://www.w3schools.com/html/html_basic.asp" target="_blank" rel="noopener noreferrer">HTML Basics</a></li>
+<li><a href="http://www.w3schools.com/html/html_elements.asp" target="_blank" rel="noopener noreferrer">HTML Elements</a></li>
+<li><a href="http://www.w3schools.com/html/html_attributes.asp" target="_blank" rel="noopener noreferrer">HTMl Attributes</a></li>
+<li><a href="http://www.w3schools.com/html/html_headings.asp" target="_blank" rel="noopener noreferrer">HTML Headings</a></li>
+<li><a href="http://www.w3schools.com/html/html_paragraphs.asp" target="_blank" rel="noopener noreferrer">HTML Paragraphs</a></li>
+<li><a href="http://www.w3schools.com/html/html_images.asp" target="_blank" rel="noopener noreferrer">HTML Images</a></li>
+<li><a href="http://www.w3schools.com/html/html_lists.asp" target="_blank" rel="noopener noreferrer">HTML Lists</a></li>
+</ul>
+</div>
+</div>
+<h2 style="text-align: center;"><strong><iframe width="90%" height="450" src="https://www.youtube.com/embed/wcVGB6AybQM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></strong></h2>
+<p style="text-align: center;"><strong>If you need a little bit of a helping hand, watch this Step by Step Sister A Video!</strong></p>
+<h2>Step 01</h2>
+<p>If you completed the Software setup activity you should already have an html file ready called index.html. It should look something like this:</p>
+<div class="highlight2">
+<pre><code>
+</code></pre>
+<div class="highlight2">
+<pre><span style="font-size: 12pt;"><code><span style="color: #e06666;">&lt;!DOCTYPE html&gt;</span>
+<span style="color: #6aa84f;">&lt;html&gt;</span>
+
+<span style="color: #6aa84f;">&lt;head&gt;</span>
+    <span style="color: #6aa84f;">&lt;title&gt;</span><span style="color: #ea9999;">Hello</span><span style="color: #6aa84f;">&lt;/title&gt;
+    &lt;meta</span> <span style="color: #808080;">charset=</span><span style="color: #e69138;">"utf-8"</span><span style="color: #6aa84f;">&gt;</span>
+    <span style="color: #6aa84f;">&lt;meta</span> <span style="color: #808080;">name=</span><span style="color: #e69138;">"viewport"</span> <span style="color: #808080;">content=</span><span style="color: #e69138;">"width=device-width, initial-scale=1"</span><span style="color: #6aa84f;">&gt;</span>
+    <span style="color: #6aa84f;">&lt;link</span> <span style="color: #808080;">rel=</span><span style="color: #e69138;">"stylesheet"</span> <span style="color: #808080;">href=</span><span style="color: #e69138;">"/styles.css"</span><span style="color: #6aa84f;">&gt;</span>
+<span style="color: #6aa84f;">&lt;/head&gt;</span><br /><span style="color: #6aa84f;">&lt;body&gt;</span>
+    <span style="color: #6aa84f;">&lt;header&gt;</span>
+        <span style="color: #808080;">&lt;!-- logo will go here --&gt;</span>
+        <span style="color: #6aa84f;">&lt;nav&gt;</span>
+            <span style="color: #6aa84f;">&lt;ul&gt;</span> <span style="color: #808080;">&lt;!-- logo will go here --&gt;</span> <br />                <span style="color: #6aa84f;">&lt;li&gt;&lt;a</span> <span style="color: #808080;">href=</span><span style="color: #e69138;">"index.html"</span><span style="color: #808080;"><span style="color: #6aa84f;">&gt;</span><span style="color: #ea9999;">Home</span></span><span style="color: #6aa84f;">&lt;/a&gt;&lt;/li&gt;</span> <br />                <span style="color: #6aa84f;">&lt;li&gt;&lt;a</span> <span style="color: #808080;">href=</span><span style="color: #e69138;">"aboutme.html"</span><span style="color: #808080;"><span style="color: #6aa84f;">&gt;</span><span style="color: #ea9999;">About Me</span></span><span style="color: #6aa84f;">&lt;/a&gt;&lt;/li&gt;</span> <br />           <span style="color: #6aa84f;"> &lt;/ul&gt;</span> <br />        <span style="color: #6aa84f;">&lt;/nav&gt;</span><br />                <span style="color: #808080;">&lt;!-- wide banner image will go here --&gt;</span> <br />          <span style="color: #6aa84f;"> &lt;/header&gt;</span> <br /><span style="color: #6aa84f;">&lt;/body&gt; </span><br /><span style="color: #6aa84f;">&lt;/html&gt; </span></code></span></pre>
+</div>
+<pre><code></code></pre>
+<p></p>
+<pre><code></code></pre>
+</div>
+<p>If you don't have that, go follow the&nbsp;<a href="https://byui-cit.github.io/wdd100/lesson01/software-setup.html" target="_blank" rel="noopener">Software Setup</a>&nbsp;instructions and come back when you are done.</p>
+<p></p>
+<div>
+<div class="callout">
+<h2>Naming files for the web</h2>
+<p>There are a few things to keep in mind as you come up with names for the files and folders that will make up your website.</p>
+<ul>
+<li>Always name the first page of your site&nbsp;<strong><kbd>index.html</kbd></strong></li>
+<li>Most web hosts are&nbsp;<strong><em>case-sensitive</em></strong>&nbsp;which means there is a difference between&nbsp;<kbd>Index.html</kbd>&nbsp;and&nbsp;<kbd>index.html</kbd></li>
+<li>So...<strong>Make your filenames all lowercase</strong>&nbsp;to avoid problems with case sensitivity.</li>
+<li>Avoid spaces and other special characters in your filenames (a-z, 0-9, -, and _ are all safe to use)</li>
+</ul>
+</div>
+</div>
+<h2>Step 02</h2>
+<p>From the Khan Academy lesson we learned about&nbsp;&nbsp;<kbd>&lt;meta charset="utf-8"&gt;</kbd>. Meta tags give the browser information to help it build the web page. They are always found in the&nbsp;&nbsp;<kbd>&lt;head&gt;</kbd>&nbsp;with the other information that is for the browser only. Look to make sure that this line is in the starter code you were given.</p>
+<h2>Step 03</h2>
+<p>Let's go ahead and change the title next. The &lt;title&gt; of the page shows at the top of the browser window or on the tab of a browser window, and in the search listing for a site. Let's pick something that will make sure people know what the site is, and what page they are currently on. Something like "Rolling Rapids Vacations | Home".</p>
+<div>
+<div class="callout">
+<p>We know from the&nbsp;&nbsp;<a href="https://byui-cit.github.io/wdd100/images/wireframe-boxes-labels.jpg" target="_blank" rel="noopener">wireframe</a>&nbsp;for the home page for the Dry Oar site that there will be a combination of images, headlines, and text on the page. The Khan academy lesson for this week taught you how to add all of those things to a page with HTML. You will need to refer back to the wireframe in the site plan document throughout this activity to make sure you don't forget anything on the home page.</p>
+<p>As you look at the wireframe you will notice a few things. First a box with an X through it&nbsp; or a basic image placeholder indicates an image will go there. A shaded box around something indicates that it should be colored. The numbers that are in the corners of some of the boxes indicate sizes.</p>
+<p>The wireframe also indicates where our headlines and paragraphs will be, and should show approximately how much space the text should take up, and the relative sizes of the headlines and paragraph text. It also helps us to see the organization of the page. Elements are organized into groups. It will be important that we include html markup to represent those groups, as well as to get the content on the page.&nbsp; Please note: the home page must be set up and laid out according to the wireframe. On you other two pages, you will be able to use your creativity and do it "your way".</p>
+</div>
+<h3>Note!</h3>
+<p>We will&nbsp;<strong>NOT</strong>&nbsp;be adding colors and other styles this week. Our only goal is to get all of the content onto the page that is shown on the wireframe. Our Page will&nbsp;<strong>NOT</strong>&nbsp;look exactly like the wireframe with things on the left and right when we finish this week. Each week will get us closer, but our page will not look exactly like the wireframe for few weeks, so patience will be required :)&nbsp; Please do not lay your page out any differently or ahead of time if you have prior experience.&nbsp; This is because the weekly coding assignments require certain things to be done to the page.</p>
+<h2>Laying the groundwork</h2>
+<h2>Step 04</h2>
+<p>Building a website is actually a lot like building a house. You start with a blueprint (wireframe) and then you build the foundation and frame for the house. We have already built the foundation. We did that when we added the<kbd>&lt;html&gt;</kbd>,&nbsp;<kbd>&lt;head&gt;</kbd>, and&nbsp;<kbd>&lt;body&gt;</kbd>&nbsp;elements above. The framing takes the rooms outlined on the blueprint and creates a real space to put them. We need to do the same thing for our webpage, except for instead of rooms we are looking at content areas.</p>
+<p>The way we "frame" in our webpage is by looking carefully at our wireframe to see what "rooms" we have. Then we use some special HTML tags to define them.</p>
+<div class="callout">
+<p>Take a moment to review the&nbsp;<a href="https://byui-cit.github.io/wdd100/images/wireframe-boxes-labels.jpg" target="_blank" rel="noopener">wireframe</a>&nbsp;again to help remember what we are trying to do. Remember that I mentioned above that we are looking right now at content areas...elements on the page that are related and grouped. The wireframe has colored boxes to help you to see those relationships. We need to add some markup to create those 'rows' or 'boxes' in our html.</p>
+<p>Html has several tags specifically for this purpose. Some have specific semantic meanings and others don't. We should always try and use the ones with meaning whenever we can. Here is a list of some of the more common of these tags:&nbsp;&nbsp;<kbd>&lt;header&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;footer&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;main&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;section&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;nav&gt;</kbd>,&nbsp;<kbd>&lt;article&gt;</kbd>,&nbsp;<kbd>&lt;figure&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;aside&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;div&gt;</kbd>, and&nbsp;&nbsp;<kbd>&lt;span&gt;</kbd>.</p>
+<p>Last week you were asked to review a short article on&nbsp;<a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener noreferrer">HTML Semantics</a>. There is a chart there that does a nice job of showing how those elements might be used in a simple site layout. Take a minute to go check it out again.</p>
+<p>All of these elements behave the same in the browser except for&nbsp;&nbsp;<kbd>&lt;span&gt;</kbd>, but they are used to show different sections of the page. Try to use the more specific ones first, using a generic&nbsp;&nbsp;<kbd>&lt;div&gt;</kbd>&nbsp;only if none of the others seems to apply to the content you are boxing in.</p>
+</div>
+<p>Add HTML elements to your body to start outlining content areas. The first we need is at the top of the page. Notice that there is a box around the logo and navigation bar. Those elements are related and form the header of the page. Lucky for us if you look in the list of tags above you will see that there is a&nbsp;<kbd>&lt;header&gt;</kbd>&nbsp;tag! Not only that but the starter code already has one.</p>
+<p>Inside of the header you can see a second box around the links for the navigation. Again after reviewing the list above we see a&nbsp;<kbd>&lt;nav&gt;</kbd>&nbsp;tag...perfect! And again it looks like the instructor was a little too generous with the starter code because you already have one!</p>
+<p>Next let's add an area where the main content for this page will go. On a normal site the header and footer will stay the same across pages...but the central content will change from page to page. We need a box to hold that. The&nbsp;<code>&lt;main&gt;</code>&nbsp;tag was built for just this use. Add a&nbsp;<code>&lt;main&gt;</code>&nbsp;element to your page right below the&nbsp;<code>&lt;/header&gt;</code></p>
+<p>The first thing we need inside our new&nbsp;<code>&lt;main&gt;</code>&nbsp;element is a banner image that will stretch all the way across the screen. Let's add some html to hold that. In this case a simple&nbsp;<kbd>&lt;div&gt;</kbd>&nbsp;is probably the right answer.</p>
+<div class="callout">
+<h4>Tip!</h4>
+<p>There will be a lot of code examples in this and other lessons. Avoid the temptation to just copy/paste them into your page. Type them out! This might seem like a bother, but you will remember the HTML and CSS we use much better if you do ;)</p>
+</div>
+<p>At this point, my &lt;header&gt; section code looks like this:</p>
+<div class="highlight2">
+<pre><code><span style="font-size: 12pt;"><span style="color: #6aa84f;">&lt;body&gt;</span>
+    <span style="color: #6aa84f;">&lt;header&gt;</span>
+        <span style="color: #808080;">&lt;!-- logo will go here --&gt;</span>
+        <span style="color: #6aa84f;">&lt;nav&gt;</span>
+            <span style="color: #6aa84f;">&lt;ul&gt;</span> <span style="color: #808080;">&lt;!-- logo will go here --&gt;</span> </span><br /><span style="font-size: 12pt;">                <span style="color: #6aa84f;">&lt;li&gt;&lt;a</span> <span style="color: #808080;">href=</span><span style="color: #e69138;">"index.html"</span><span style="color: #808080;"><span style="color: #6aa84f;">&gt;</span><span style="color: #ea9999;">Home</span></span><span style="color: #6aa84f;">&lt;/a&gt;&lt;/li&gt;</span> </span><br /><span style="font-size: 12pt;">                <span style="color: #6aa84f;">&lt;li&gt;&lt;a</span> <span style="color: #808080;">href=</span><span style="color: #e69138;">"aboutme.html"</span><span style="color: #808080;"><span style="color: #6aa84f;">&gt;</span><span style="color: #ea9999;">About Me</span></span><span style="color: #6aa84f;">&lt;/a&gt;&lt;/li&gt;</span> </span><br /><span style="color: #6aa84f; font-size: 12pt;">            &lt;/ul&gt; </span><br /><span style="color: #6aa84f; font-size: 12pt;">        &lt;/nav&gt;</span><br /><span style="color: #808080; font-size: 12pt;">                &lt;!-- wide banner image will go here --&gt; </span><br /><span style="color: #6aa84f; font-size: 12pt;">           &lt;/header&gt; </span><br /><span style="color: #6aa84f; font-size: 12pt;">&lt;/body&gt; </span><br /><span style="color: #6aa84f; font-size: 12pt;">&lt;/html&gt; </span></code></pre>
+</div>
+<p><span style="color: #b45f06;">You may have noticed the lines in my code above that are in grey. They are called comments...notes to yourself that the browser will ignore. Comments start with &lt;!-- and end with --&gt; and everything in-between will be ignored. Comments are a great way to remind yourself what you were thinking when you did something in your page.</span></p>
+</div>
+<h2>Step 05</h2>
+<div>
+<p><span style="color: #b45f06;">Let's move onto the next section. (Labeled 'Row 1' on the wireframe) It has 3 boxes. One that essentially forms the "row", and then 2 others inside of that section that will form "columns". All of these 'rows' should go into the&nbsp;<code>&lt;main&gt;</code>&nbsp;element. Notice that one of those columns contains a headline and paragraph. If you did any reading on the tags above you might have noticed the&nbsp;<code><a href="http://www.w3schools.com/tags/tag_section.asp" target="_blank" rel="noopener" style="color: #b45f06;">&lt;section&gt;</a></code>&nbsp;tag. It is specifically for a section of a page that contains a headline, one or more paragraphs, and possibly an image. Let's add one.</span></p>
+<p><span style="color: #b45f06;">After adding the&nbsp;<kbd>&lt;section&gt;</kbd>&nbsp;element we need to add 2 more elements to represent the left and right columns. In this case again I think a&nbsp;<kbd>&lt;div&gt;</kbd>&nbsp;would be great.</span></p>
+<p><span style="color: #b45f06;">Your&nbsp;<kbd>&lt;body&gt;</kbd>&nbsp;should look something like this now:</span></p>
+<br /><main>
+<section>
+<section>
+<div>
+<div class="highlight2">
+<pre><code>
+</code></pre>
+<div class="highlight2">
+<pre><code><span style="color: #6aa84f;">&lt;body&gt;</span>
+    <span style="color: #6aa84f;">&lt;header&gt;</span>
+        <span style="color: #808080;">&lt;!-- logo will go here --&gt;</span>
+        <span style="color: #6aa84f;">&lt;nav&gt;</span>
+            <span style="color: #6aa84f;">&lt;ul&gt;</span> <span style="color: #808080;">&lt;!-- logo will go here --&gt;</span> <br />                <span style="color: #6aa84f;">&lt;li&gt;&lt;a</span> <span style="color: #808080;">href=</span><span style="color: #e69138;">"index.html"</span><span style="color: #808080;"><span style="color: #6aa84f;">&gt;</span><span style="color: #ea9999;">Home</span></span><span style="color: #6aa84f;">&lt;/a&gt;&lt;/li&gt;</span> <br />                <span style="color: #6aa84f;">&lt;li&gt;&lt;a</span> <span style="color: #808080;">href=</span><span style="color: #e69138;">"aboutme.html"</span><span style="color: #808080;"><span style="color: #6aa84f;">&gt;</span><span style="color: #ea9999;">About Me</span></span><span style="color: #6aa84f;">&lt;/a&gt;&lt;/li&gt;</span> <br />           <span style="color: #6aa84f;"> &lt;/ul&gt;</span> <br />        <span style="color: #6aa84f;">&lt;/nav&gt;</span><br />                <span style="color: #808080;">&lt;!-- wide banner image will go here --&gt;</span> <br />          <span style="color: #6aa84f;"> &lt;/header&gt;</span> <br /><br />        <span style="color: #6aa84f;">&lt;main&gt;</span><br />          <span style="color: #6aa84f;">&lt;section&gt;</span> <span style="color: #808080;">&lt;!-- this is the first row or section of content --&gt;</span> <br />                <span style="color: #6aa84f;">&lt;div&gt;</span><br />                    <span style="color: #808080;">&lt;!-- first row  left column content here --&gt;</span> <br />                <span style="color: #6aa84f;">&lt;/div&gt;</span><br /><br />               <span style="color: #6aa84f;">  &lt;div&gt;</span><br />                     <span style="color: #808080;">&lt;!-- first row  right column content here --&gt;</span> <br />                 <span style="color: #6aa84f;">&lt;/div&gt;</span><br /><span style="color: #6aa84f;">           &lt;/section&gt;</span><br /><span style="color: #6aa84f;">         &lt;/main&gt;</span><br /><span style="color: #6aa84f;">&lt;/body&gt;</span> <br /></code></pre>
+</div>
+<pre><code></code></pre>
+<pre></pre>
+</div>
+<h4>Indentation</h4>
+<p>You may have noticed something else about my code as well. Notice how I am indenting my HTML elements to help me clearly see which elements are inside of other elements. As your page gets larger this becomes more and more important. Take a little time to keep your code in order...you will be happy you did later on.</p>
+<h2>Step 06</h2>
+<p>We have 2 more rows now in the wireframe to define.</p>
+<p>The Second row of content is actually structured exactly the same as the previous one. So add another&nbsp;<code>&lt;section&gt;</code>&nbsp;that looks just like the first (include the divs inside the section as well), right&nbsp;<em>after</em>&nbsp;the first section. The third row is more simple. We can probably get away with a single<code>&lt;section&gt;</code>&nbsp;for it. Make sure both of these&nbsp;<code>&lt;section&gt;</code>s go&nbsp;<em>inside</em>&nbsp;of&nbsp;<code>&lt;main&gt;</code>. It should look something like this:</p>
+<div class="highlight2">
+<div class="highlight2">
+<p><code><span style="color: #6aa84f;">&lt;main&gt;</span><br /><span style="color: #6aa84f;">&nbsp; &nbsp; &nbsp; &nbsp;&lt;section&gt;</span> <span style="color: #808080;">&lt;!-- this is the first row or section of content --&gt;</span> <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #6aa84f;">&nbsp;&lt;div&gt;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #808080;">&lt;!-- first row  left column content here --&gt;</span> <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #6aa84f;">&lt;/div&gt;</span><br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #6aa84f;">&lt;div&gt;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #808080;">&nbsp;&lt;!-- first row  right column content here --&gt;</span> <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #6aa84f;">&nbsp; &lt;/div&gt;</span><br /><span style="color: #6aa84f;">&nbsp; &nbsp; &nbsp; &nbsp;&lt;/section&gt;</span></code></p>
+<p><code>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<span style="color: #6aa84f;">&lt;section&gt;</span> <span style="color: #808080;">&lt;!-- this is the second row or section of content --&gt;</span> <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #6aa84f;">&lt;div&gt;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #808080;">&lt;!-- second row  left column content here --&gt;</span> <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #6aa84f;"> &lt;/div&gt;</span><br /><br /><span style="color: #6aa84f;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div&gt;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #808080;">&lt;!-- second row  right column content here --&gt;</span> <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #6aa84f;">&lt;/div&gt;</span><br /><span style="color: #6aa84f;">&nbsp; &nbsp; &nbsp; &nbsp;&lt;/section&gt;</span></code></p>
+<p><code>&nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #6aa84f;">&nbsp;&lt;section&gt;</span> <span style="color: #808080;">&lt;!-- this is the third row or section of content --&gt;</span> <br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #808080;">&lt;!-- third row  right column content here --&gt;</span> <br />&nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #6aa84f;">&lt;/section&gt;</span><br /><span style="color: #6aa84f;">&lt;/main&gt;</span></code></p>
+</div>
+</div>
+<h2>Step 07</h2>
+<p>We are now to the bottom of the page. This is usually known as the footer. Lucky for us there is a&nbsp;<code>&lt;footer&gt;</code>&nbsp;tag. Add one below your 3rd row (section) and after the&nbsp;<code>&lt;/main&gt;</code>. Inside of that I didn't draw any boxes, but hopefully by now you can recognize that there are 2 content areas inside our footer. One for the Copyright and another for some social media icons we will add later.</p>
+<p>Add 2 elements to contain those bits of content. Remember: the&nbsp;<code>&lt;footer&gt;</code>&nbsp;should go&nbsp;<em>below</em>&nbsp;the&nbsp;<code>&lt;/main&gt; and will have the left and right columns like in sections 1 and 2.</code></p>
+<div class="highlight2">
+<p><code><span style="color: #6aa84f;">&lt;footer&gt;</span><br /><span style="color: #6aa84f;">&nbsp; &nbsp; &nbsp;&nbsp;&lt;div&gt;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #808080;">&lt;!-- footer row  left column content here --&gt;</span> <br />&nbsp; &nbsp; &nbsp;<span style="color: #6aa84f;"> &lt;/div&gt;&nbsp;</span></code></p>
+<p><code><span style="color: #6aa84f;">&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&lt;div&gt;</span><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #808080;"> &lt;!-- footer row  right column content here --&gt;</span> <br />&nbsp;<span style="color: #6aa84f;"> &nbsp; &nbsp; &lt;/div&gt;&nbsp;</span><br /><span style="color: #6aa84f;">&lt;/footer&gt;</span></code></p>
+</div>
+<h2>Adding content</h2>
+<div class="callout">
+<p>To add content you need content! This will come from a few sources.</p>
+<ol>
+<li>Make sure to have the&nbsp;<a href="https://byui-cit.github.io/wdd100/images/wireframe-boxes-labels.jpg" target="_blank" rel="noopener">wireframe</a>&nbsp;open and handy.</li>
+<li>You will find blocks of text you can use embedded in the intructions below. Watch for them! (You can modify these if you want)</li>
+<li>Images can be found here:&nbsp;<a href="https://byui-cit.github.io/wdd100/resources/dryoarimages.html" target="_blank" rel="noopener">images-1</a>&nbsp;or here:&nbsp;<a href="https://www.dropbox.com/sh/r9d1gq256pyuwws/AAD7bMbgW0keCVs5ZLUG3sBDa?dl=0" target="_blank" rel="noopener">images-2</a>&nbsp;(or you can find some of your own)</li>
+</ol>
+<p>With that, we should now have all of the "framing" done on our webpage. We have a place defined now for all the content that needs to be on the page. With that done we are now ready to actually add it! Remember to refer often to the&nbsp;<a href="https://byui-cit.github.io/wdd100/images/wireframe-boxes-labels.jpg" target="_blank" rel="noopener">wireframe</a>&nbsp;as you are adding the content. The instructions will make much more sense if you are looking at the blueprint!</p>
+</div>
+<h2>Step 08</h2>
+<p>Let's work on the header first. Visit the image links above and find a logo image you would like to use. Add an&nbsp;<kbd>&lt;img&gt;</kbd>&nbsp;tag to your page inside the&nbsp;&nbsp;<kbd>&lt;header&gt;</kbd>. Remember that the&nbsp;&nbsp;<kbd>&lt;img&gt;</kbd>&nbsp;tag has 2 required attributes:&nbsp;&nbsp;<kbd>alt</kbd>&nbsp;and&nbsp;<kbd>src</kbd>.</p>
+<p><kbd>src="&nbsp; "</kbd>&nbsp;should indicate the location of the image and&nbsp;<kbd>alt=""</kbd>&nbsp;should contain a one or two word description about the image and is used primarily for the screen readers that the visually impaired use to browse the web or if the image link is broken, it will remind you what it should be.</p>
+<div class="callout">
+<p>There are two ways to bring images into your editor to use on the page.&nbsp; One is to right-click on an image to copy the url and paste the url in your image line.&nbsp; The problem with this method, is that since the images are on someone else's server, you never know if it will stay there... It is much better to have a media folder local to your files so that you can control the image.&nbsp; The assets folder in glitch is the media folder... open the asset folder, and drag the images you plan to use on the website...</p>
+<p style="text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="/content/enforced/439093-Online.2018.Spring.WDD100.09/Course Files/../Glitch8.jpg" alt="" title="" width="393" height="160" />&nbsp; &nbsp; &nbsp;<img src="/content/enforced/439093-Online.2018.Spring.WDD100.09/Course Files/../imageaddress.jpg" alt="" title="" width="262" height="177" /></p>
+</div>
+<p>Once they are there, you just click on the image now and paste the image url into your image line.</p>
+<p>We just need to figure out what its URL is to add it to our page. Your browser makes it really easy to do that. If you click with the right mouse button on any image in the browser your computer will offer you several actions you can take. The one we are interested in right now is "Copy Image Address".</p>
+<div class="callout">
+<p>Copy the address for the logo image and paste the result into the src attribute in our image. the final tag should look something like this:</p>
+<div class="highlight2">
+<pre><code>&lt;img src="<a href="http://brothert.net/dryoar/images/dryoarlogo.png">http://brothert.net/dryoar/images/dryoarlogo.png</a>" alt="Dry Oar boating logo"&gt;</code></pre>
+</div>
+</div>
+<p>You may be wondering what your site looks like. Remember that you can hit the "Show" button anytime to see the results of your work.</p>
+<p>Now do the same thing for the last part of the &lt;header&gt;, the banner image.</p>
+<h2>Step 09</h2>
+<p>Now it's time to add the list of subpages that will eventually become links and provide our site's navigation.</p>
+<p>Notice that I said 'list' there. One thing most people don't realize is that most navigation bars on most websites are made with an unordered list...the same one you learned how to use in this week's Khan Academy lesson. They are well disguised, but they really are lists.</p>
+<p>The starter code provided already had the start of a list for you. Notice the&nbsp;<kbd>&lt;ul&gt;</kbd>&nbsp;element with two &lt;li&gt; children. Add additional &lt;li&gt; elements for each link that shows in your siteplan. I would let the&nbsp;<code>aboutme.html</code>&nbsp;link drop to the bottom of the list.</p>
+<p>Your&nbsp;<kbd>&lt;header&gt;</kbd>&nbsp;should look something like this:</p>
+<div class="highlight2">
+<pre><code></code></pre>
+<div class="highlight2">
+<pre><code><span style="color: #6aa84f;">&lt;header&gt;</span>
+ <span style="color: #6aa84f;">&lt;img</span> <span style="color: #808080;">src=</span><span style="color: #e69138;">"<a href="http://brothert.net/dryoar/images/dryoarlogo.png" style="color: #e69138;">http://brothert.net/dryoar/images/dryoarlogo.png</a>"</span> <span style="color: #808080;">alt=</span><span style="color: #e69138;">"website logo"</span><span style="color: #6aa84f;">&gt;</span>
+<span style="color: #6aa84f;"> &lt;nav&gt;
+   &lt;ul&gt;</span>
+       <span style="color: #6aa84f;">&lt;li&gt;&lt;a</span> <span style="color: #808080;">href=</span><span style="color: #e69138;">"index.html"</span><span style="color: #6aa84f;">&gt;</span><span style="color: #ea9999;">Home</span><span style="color: #6aa84f;">&lt;/a&gt;&lt;/li&gt;</span>
+       <span style="color: #ea9999;">...the rest of your list...</span>
+       <span style="color: #6aa84f;">&lt;li&gt;&lt;a</span> <span style="color: #808080;">href=</span><span style="color: #e69138;">"aboutme.html"</span><span style="color: #6aa84f;">&gt;</span><span style="color: #ea9999;">About Me</span><span style="color: #6aa84f;">&lt;/a&gt;&lt;/li&gt;</span>
+   <span style="color: #6aa84f;">&lt;/ul&gt;
+ &lt;/nav&gt;</span><br /> <span style="color: #6aa84f;">&lt;img</span> <span style="color: #808080;">src=</span><span style="color: #e69138;">"<a href="http://brothert.net/dryoar/images/dryoarlogo.png" style="color: #e69138;">http://brothert.net/dryoar/images/dryoarbanner.png</a>"</span> <span style="color: #808080;">alt=</span><span style="color: #e69138;">"banner image"</span><span style="color: #6aa84f;">&gt;</span> <br /><span style="color: #6aa84f;">&lt;/header&gt;</span> </code></pre>
+</div>
+<pre><code></code></pre>
+<pre></pre>
+</div>
+<h2>Step 10</h2>
+<img src="https://byui-cit.github.io/wdd100/images/2015-11-11_1525.png" alt="Tiny Partial Circle" title="Tiny Partial Circle" style="max-width: 100%; float: right;" />
+<p>Remember, at anytime, you can see what your site is looking like&nbsp; by hitting the view at the top of the page.</p>
+<p>If your page does not update, click the refresh button (The tiny partial circle by the address line) &nbsp;on the Chrome&nbsp;browser.&nbsp;</p>
+<h2>Step 11</h2>
+<p>Next we have 2 sections that have a headline, a paragraph, and an image (Make sure to refer&nbsp;to&nbsp;the wireframe). Earlier we created places for that content to go. Using the&nbsp;&nbsp;<kbd>&lt;h1&gt;</kbd>or&nbsp;&nbsp;<kbd>&lt;h2&gt;</kbd>&nbsp;tag add the first headline to the page inside of the first&nbsp;<kbd>&lt;div&gt;</kbd>&nbsp;in the first&nbsp;<kbd>&lt;section&gt;</kbd>&nbsp;(There is a headline on the wireframe you can use...or you can make up your own). Then use a&nbsp;&nbsp;<kbd>&lt;p&gt;</kbd>&nbsp;tag to add the following text: (or something similar...feel free to edit this :) ) inside of that same&nbsp;<kbd>&lt;div&gt;</kbd></p>
+<div class="callout">
+<p><kbd>We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar philosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love.&nbsp; The text comes first, on the left, and the image comes after on the right.</kbd></p>
+</div>
+<p>Finally choose another picture from those provided and add it in the second&nbsp;<kbd>&lt;div&gt;</kbd>&nbsp;in that&nbsp;<kbd>&lt;section&gt;</kbd>.</p>
+<p>Here is an example of how your section should look:</p>
+<div class="highlight2">
+<pre><code>
+<span style="color: #6aa84f;">&lt;section&gt;</span> <span style="color: #808080;">&lt;!-- this is the first row of content --&gt;</span> 
+    <span style="color: #6aa84f;">&lt;div&gt;</span> 
+        <span style="color: #808080;">&lt;!-- left column content here --&gt;</span>
+        <span style="color: #6aa84f;">&lt;h2&gt;</span><span style="color: #ea9999;">We run Rivers to relax.</span><span style="color: #6aa84f;">&lt;/h2&gt;</span>
+        <span style="color: #6aa84f;">&lt;p&gt;</span><span style="color: #ea9999;">We believe that there is nothing like a river trip for relaxing...</span>  <span style="color: #6aa84f;">&lt;/p&gt;</span>
+    <span style="color: #6aa84f;">&lt;/div&gt;
+    &lt;div&gt;</span> 
+       <span style="color: #808080;"> &lt;!-- right column content here --&gt;</span>
+        <span style="color: #6aa84f;">&lt;img</span> <span style="color: #808080;">src=</span><span style="color: #e69138;">"picture1.jpg" alt="picture of a river"</span><span style="color: #6aa84f;">&gt;</span>
+    <span style="color: #6aa84f;">&lt;/div&gt;    
+&lt;/section&gt;</span> </code></pre>
+</div>
+<h4>Using personal images</h4>
+<p>You may be wondering how you might use a picture of your own on a website. It's actually pretty easy. An image needs to be on a webserver in order to be used on a website. Glitch is our webserver, so if you want to add a picture of your own you just need to upload it into Glitch as we did for the About Me activity. You might want to take an early look at the&nbsp;<a href="https://byui-cit.github.io/wdd100//lesson06/optimizing-images.html" target="_blank" rel="noopener">Optimizing Images</a>&nbsp;activity before you do this though.</p>
+<h2>Step 12</h2>
+<p>The next section is very similar...notice that the order of the elements is slightly different. In the second&nbsp;<kbd>&lt;section&gt;</kbd>tag add an image in the first&nbsp;<kbd>&lt;div&gt;</kbd>, then headline, and paragraph (the order&nbsp;<em>is</em>&nbsp;important) in the second&nbsp;<kbd>&lt;div&gt;</kbd>. Here is the text for this section:</p>
+<div class="callout">
+<p><kbd>That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that that tenseness that comes when you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful water that always follows even more.</kbd></p>
+</div>
+<h2>Step 13</h2>
+<p>The next section shouldn't be a problem at this point. In your last&nbsp;<kbd>&lt;section&gt;</kbd>&nbsp;add another headline and paragraph. Here is the text:</p>
+<div class="callout">
+<p><kbd>We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. We're waiting to hear from you!</kbd></p>
+</div>
+<h2>Step 14</h2>
+<div class="callout">
+<p>Finally let's add the content to the&nbsp;<kbd>&lt;footer&gt;</kbd>. The copyright comes first. Put it into the first element that you should have added in your&nbsp;<kbd>&lt;footer&gt;</kbd>. To make the copyright symbol we use a special code, there are many of these but we will just learn this one today: &amp;copy; Place that right before the 2018 so it will look like this:</p>
+<div class="highlight2">
+<pre><code>&lt;p&gt;&amp;copy; 2018 Dry Oar (or name of your business)&lt;p&gt;</code></pre>
+</div>
+<p>Let's go ahead and add your name as part of the footer as well.&nbsp; So the final html for the footer section should look something like this:</p>
+<div class="highlight2">
+<pre><code><span style="color: #6aa84f;">&lt;footer&gt;</span><br />     <span style="color: #6aa84f;">&lt;div&gt;</span><span style="color: #808080;">&lt;!-- this is the left side of the footer --&gt;</span> <br />        <span style="color: #6aa84f;">&lt;p&gt;</span><span style="color: #ea9999;">&amp;copy;</span> <span style="color: #e69138;"><span style="color: #ea9999;">2018 Dry Oar - FirstName LastName | WDD100-section 10</span><span style="color: #6aa84f;">&lt;</span></span><span style="color: #6aa84f;">/p&gt;</span> <br />     <span style="color: #6aa84f;"> &lt;/div&gt;</span><br /><br />      <span style="color: #6aa84f;">&lt;div&gt;</span><span style="color: #808080;">&lt;!-- this is the right side of the footer --&gt;</span><br />           <span style="color: #808080;">&lt;!-- social media content here (3 socialmedia icons --&gt;</span> <br />    <span style="color: #6aa84f;">  &lt;/div&gt; </span><br /><span style="color: #6aa84f;">&lt;/footer&gt;</span> </code></pre>
+</div>
+<p>Make sure to use the current year for the copyright! We will add the icons for the social media links later.</p>
+</div>
+</div>
+</section>
+</section>
+</main></div>
+<p><strong>One more reminder!</strong>&nbsp;Our only goal is to get all of the content onto the page that is shown on the wireframe. Our Page will&nbsp;<strong>not</strong>&nbsp;look like the wireframe at this point. Each week will get us closer, but our page will not look exactly like the wireframe for several weeks, so patience will be required :)</p>
+<h2>Step 15</h2>
+<p>Make sure to view your web page online to make sure your changes are correct. Once verified, submit the URL to iLearn.&nbsp;</p>
+<div class="callout">Depending on your instructor's preference, you will send either:
+<ul>
+<li>the&nbsp; url from your browser that you use to view your page (this will be a short url something like:&nbsp;
+<div class="highlight2"><code><a href="http://w16thompsond.glitch.me">http://w16thompsond.glitch.me)</a></code></div>
+</li>
+</ul>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OR <br />
+<ul>
+<li>the share collaborative url (which will be much longer and will resemble:
+<div class="highlight2"><span style="font-size: 10pt; font-family: 'courier new', courier, sans-serif;"><strong><span style="text-decoration: underline; color: #597eaa;">http://glitch.com/edit/#!/join/48001bb2-9299-452b-8693-b8a8a01a9db1...</span></strong></span></div>
+</li>
+</ul>
+</div>
+<p>(notice the edit and join, that is a sign that you have the correct url)&nbsp; to get this one, click on share button at the top left in glitch and then choose the 3rd option down the list which is labeled Invite collaborators to edit</p>
+<div class="example">
+<p style="text-align: left;"><span style="color: #085394;">Here are this week's page examples.&nbsp; Your page and code should look similar, but of course with your text and images.&nbsp; Check the code to make sure that yours looks like this:</span></p>
+<p style="text-align: center;"><img src="/content/enforced/439093-Online.2018.Spring.WDD100.09/Course Files/../wk2block-pageexample1.jpg" alt="" title="" width="356" height="582" />&nbsp; &nbsp; &nbsp;<img src="/content/enforced/439093-Online.2018.Spring.WDD100.09/Course Files/../wk02block-codeexample1.jpg" alt="" title="" width="422" height="618" /></p>
+</div>
+<p style="text-align: left;"><span style="color: #10808e; font-size: 29px;"></span></p>
+<p style="text-align: left;"><span style="color: #10808e; font-size: 29px;">Grading</span></p>
+</div>
+<div class="grading">
+<p>This activity is worth 10 pts and will be graded using the following rubric:</p>
+<ul style="list-style-type: square;">
+<li>All of the content indicated on the wireframe is included. (Essentially you should have the following: logo image, banner image, 2 regular sized images, 3 headlines, 3 paragraphs, a logo, a list of navigation page words (these will be links eventually) and a copyright/name line)</li>
+<li>all tags have a closing tag (except for the img tag, it does not need a closing tag)</li>
+<li>Semantic, structural html used to organize and group html elements where asked for ( &lt;section&gt; &lt;div&gt; &lt;header &lt;footer&gt; &lt;main&gt; &lt;html&gt; &lt;body&gt; and &lt;div&gt;for the left and right items&nbsp; )</li>
+<li>Your code is error free (look for red dots that indicate errors)</li>
+<li>Your images, headlines and paragraphs are in the correct order as shown on the wireframe and according to the directions (don't worry, they will not show left and right yet, so don't try to force them ...)</li>
+<li>Share the collaborative share url via email with sistera</li>
+<li></li>
+</ul>
+</div>
+<!-- end #article -->
+<p>
+<script src="../Web%20Files/highlight.pack.js"></script>
+<script>// <![CDATA[
+hljs.initHighlightingOnLoad();
+// ]]></script>
+</p>
+</div>
+</div>
+</body>
+</html>
