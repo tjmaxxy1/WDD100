@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+	<title>BYU-Idaho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../Web%20Files/course.css" />
+<style>
+.highlight1 {
+background-color: #fff9e5;
+padding: 7px;
+border: 1px dotted black;
+}
+.highlight2 {
+background-color: #66ff99;
+}
+.highlight3 {
+background-color: #b3e6ff;
+padding: 7px;
+border: 1px dotted black;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<div id="header"><img src="../Web%20Files/smallBanner.jpg" alt="Course Banner" /></div>
+<div id="article">
+<h1>Adding More HTML and CSS</h1>
+<hr />
+<h2>Activity Directions</h2>
+<p>Estimated time: 1:30 minutes</p>
+<p>This week we will continue with the webpage we started in the previous activities. Open up the index.html file from last week in your editor to begin.</p>
+<div class="callout">
+<p>We got all the content in our page last week....but you might of noticed it doesn't look too great. Remember that HTML is responsible to get content on a page, but to style it we use CSS. Make sure you have completed the Khan Academy&nbsp; <a href="https://www.khanacademy.org/computing/computer-programming/html-css/css-text-properties/v/css-zen-garden" target="_blank" rel="noopener">CSS Text Properties</a>&nbsp;and <a href="https://www.khanacademy.org/computing/computer-programming/html-css/html-tags-continued/p/html-links" target="_blank" rel="noopener">More HTML Tags</a>&nbsp;&nbsp;Khan Academy lessons before continuing.</p>
+</div>
+<div class="callout">
+<p>The first part of this activity will use the following html concepts or properties (review the links if you do not remember these from Khan academy):</p>
+<ul>
+<li><a href="http://www.w3schools.com/html/html5_new_elements.asp" target="_blank" rel="noopener noreferrer">HTML5 Elements</a></li>
+<li><a href="http://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener noreferrer">HTML Semantics</a></li>
+<li><a href="http://www.w3schools.com/html/html_blocks.asp" target="_blank" rel="noopener noreferrer">HTMl Block and Inline</a></li>
+<li><a href="http://www.w3schools.com/html/html_links.asp" target="_blank" rel="noopener noreferrer">HTML Links</a></li>
+</ul>
+</div>
+<p>If you need a little help with the directions, watch the Sister A Step by Step Video for this Activity... Happy Coding!</p>
+<p style="text-align: center;"><iframe width="650" height="400" src="https://www.youtube.com/embed/QsGLPAyTnNs?feature=oembed&amp;rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
+<h2>Step 01</h2>
+<p>First review the&nbsp;<a href="https://byui-cit.github.io/wdd100/images/wireframe-boxes.jpg" target="_blank" rel="noopener noreferrer">wireframe</a>&nbsp;again to help remember what we are trying to do. Last week we created 'rows' and 'columns' with html elements, and then filled them with content.</p>
+<p>As we added those structural tags last week did you notice anything about them? Whenever possible we tried to use tags that actually described what the content they would hold. This concept of using tags with meaning is called&nbsp;<a href="http://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener noreferrer">semantics</a>. This becomes very important as pages become larger and more complex.</p>
+<div class="callout">
+<h4>Semantics</h4>
+<p>So how do you know which of the semantic elements you should use when adding or grouping content? or when a simple&nbsp;<kbd>&lt;div&gt;</kbd>&nbsp;is the right answer? We shouldn't try to make everything a&nbsp;<kbd>&lt;section&gt;</kbd>&nbsp;(a section is a portion of the page that contains at least a headline, paragraph, and possibly an image that cannot stand on it's own), and html becomes really hard to read when everything is just in a generic&nbsp;<kbd>&lt;div&gt;</kbd>. Here is a&nbsp;<a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" target="_blank" rel="noopener noreferrer">flowchart</a>&nbsp;that might help.</p>
+<p>That flowchart talks about using the grouping elements, but what about other tags like &lt;p&gt; or &lt;h2&gt; or &lt;ul&gt;? At the end of the day, writing semantic HMTL means that if you need to add a headline to your page you will use a &lt;h2&gt; and not a &lt;p&gt; or a &lt;div&gt;. If you are adding a list of something use a &lt;ul&gt; or &lt;ol&gt; and not a bunch of &lt;p&gt;s. If you do need a paragraph you don't use &lt;h1&gt; or any of it's siblings...even if you want the paragraph to be big... text in a paragraph can be enlarged!&nbsp; &nbsp;Always use the tag that best describes the content.</p>
+</div>
+<div class="highlight1">
+<h4>Note</h4>
+<p>At this point do not expect your page to&nbsp;<em>look</em>&nbsp;like the wireframe. We are laying a foundation, but have not learned how to position elements yet. Don't worry if your page does not look like the wireframe at this point.</p>
+</div>
+<h2>Step 02: Internal Links</h2>
+<p>We added some text in an unordered list last week to be used as links. Right now they are just text, lets fix that. Turn each item in the list into a link by wrapping just the text (not the&nbsp;<kbd>&lt;li&gt;</kbd>!) in an&nbsp;<a href="http://www.w3schools.com/tags/tag_a.asp" target="_blank" rel="noopener noreferrer"><kbd>&lt;a&gt;</kbd></a>&nbsp;tag. The&nbsp;<kbd>&lt;a&gt;</kbd>tag has one required attribute if you recall from Khan Academy:&nbsp; &nbsp;<kbd>href=""</kbd>. This is where we tell the browser where the link should take us to. These will all be other pages on our site, but they don't exist yet. Let's just put&nbsp;<kbd>index.html</kbd>&nbsp;in there for now. That way the link will work if it's clicked on. We will replace those with actual pages as we build them.</p>
+<div class="callout">
+<div class="&quot;highlight1">
+<p>Each list item should look something like this:&nbsp;</p>
+<p><kbd>&lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;</kbd></p>
+</div>
+<p>Make sure the closing &lt;/a&gt; goes after the page name.&nbsp; If you recall from the Khan academy lesson from this week links can be used to travel to different pages on the same site, to pages on a different site, and even to different places on the same web page.</p>
+<div class="highlight1">
+<p>It is often considered a good practice if you have a link that takes you away from the current site to have it open in a new window or tab. This can be done with the&nbsp;<kbd>target="_blank"</kbd>&nbsp;attribute.&nbsp;&nbsp;The navigation links <em>should not</em> have this target.&nbsp; You want users to stay on your website.</p>
+</div>
+</div>
+<h2>Step 03: External Links</h2>
+<p>Lets add some external links to social media to our site. Khan Academy taught this week that more than just text can be used to create links. In this case it would be appropriate to make an image the link instead.</p>
+<div class="callout">
+<p>Here are some icons (images) for some common social media sites that you can use for this next step or you can go find some of your own.</p>
+<p><img src="https://byui-cit.github.io/wdd100/images/icons/facebook.png" alt="Facebook" title="Facebook" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/googleplus.png" alt="googleplus" title="googleplus" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/instagram.png" alt="instagram" title="instagram" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/twitter.png" alt="" title="" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/youtube.png" alt="youtube" title="youtube" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/pinterest.png" alt="pinterest" title="pinterest" /></p>
+<p><img src="https://byui-cit.github.io/wdd100/images/icons/color/facebook.png" alt="facebook" title="facebook" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/color/googleplus.png" alt="googleplus" title="googleplus" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/color/instagram.png" alt="instagram" title="instagram" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/color/twitter.png" alt="twitter" title="twitter" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/color/youtube.png" alt="youtube" title="youtube" />&nbsp;<img src="https://byui-cit.github.io/wdd100/images/icons/color/pinterest.png" alt="pinterest" title="pinterest" /></p>
+</div>
+<p style="text-align: left;">Select 3 social media sites and create a link to them in the footer of your page using an image. Make sure the link opens in a new window/tab.</p>
+<div style="text-align: left;">
+<div class="callout">
+<p style="text-align: left;">When we added images before, we found the URL of the image (right click, copy image address) and used that. In this case it would be better to download the image to our computer and then upload it to our <em>assets folder.</em></p>
+<p style="text-align: left;">If you right click on any of the images above you will see an option "Save image as..." Do that. Since there are many icons for the social media sites to choose from, you can use these or choose from the image folders you used when starting the home page in week 2, or you can find your own online.&nbsp; Then, Login to Glitch, go to your project,&nbsp; and click on the Assets folder. Drag each of the files you need into the browser window to upload them to Glitch. Then you can click on the image in Glitch and click the "Copy URL" button to get what you need to add to the img tag. Image lines can be copied and pasted to other areas where you will use an image and then you just need to change the image url and alt name by pasting in the url for the new image.</p>
+<p style="text-align: left;">Glitch has really long image URLs so I would recommend always using the copy functionality.</p>
+<p style="text-align: left;">The whole img tag with a src like above would look like this:</p>
+<div class="highlight1">
+<pre><span style="font-size: 8pt;"><code>
+    &lt;img src="<a href="https://cdn.glitch.com/c852da23-70d9-4da6-83eb-4823e3bbe587%2Ffacebook.png?1518559207353">https://cdn.glitch.com/c852da23-70d9-4da6-83eb-4823e3bbe587%2Ffacebook.png?1518559207353</a>" alt="Facebook icon"&gt;
+                </code></span></pre>
+</div>
+</div>
+<h2 style="text-align: left;">Part II</h2>
+<div class="callout" style="text-align: left;">
+<p style="display: inline !important;">We've been doing a lot with HTML so far...and in fact we have now added almost all the html we will need! I think it's high time we got to CSS!</p>
+<p>The second half of the activity will use the following new html/css concepts or tags (review the links if you do not remember these from Khan academy):</p>
+<ul style="list-style-type: square;">
+<li><a href="http://www.w3schools.com/css/css_howto.asp" target="_blank" rel="noopener">External Style Sheet</a></li>
+<li><a href="http://www.w3schools.com/css/css_syntax.asp" target="_blank" rel="noopener">CSS Syntax</a>&nbsp;(Including class and id selectors)</li>
+<li><a href="http://www.w3schools.com/css/css_background.asp" target="_blank" rel="noopener">Background Colors</a></li>
+<li><a href="http://www.w3schools.com/css/css_text.asp" target="_blank" rel="noopener">Text Colors</a></li>
+<li><a href="http://www.w3schools.com/css/css_dimension.asp" target="_blank" rel="noopener">CSS Width</a></li>
+<li><a href="http://www.w3schools.com/css/css_margin.asp" target="_blank" rel="noopener">CSS Margin</a></li>
+<li><a href="http://www.w3schools.com/css/css_align.asp" target="_blank" rel="noopener">CSS Centering</a>&nbsp;(Top half of the page)</li>
+</ul>
+</div>
+<h2 style="text-align: left;">Step 04: External Stylesheets</h2>
+<p>Let's add some styles! The Khan Academy lessons start out by having you add CSS in the&nbsp;&nbsp;<kbd>&lt;head&gt;</kbd>&nbsp;portion of your page. There is actually a better way, and we are already setup to do it. We will use an external stylesheet instead of the Internal method Khan uses.</p>
+<p>You may have noticed the line in your HTML that looks like this:</p>
+<pre><code>&lt;link rel="stylesheet" href="/styles.css"&gt;</code></pre>
+<p>You may have also noticed a file in your list called&nbsp;<code>styles.css</code>. The&nbsp;<code>link</code>&nbsp;tag tells the html file where to find the CSS it should use to style the page. We will enter all of our CSS in the&nbsp;<code>styles.css</code>&nbsp;file. If you open up that file you will notice a bit of CSS already written. Let's remove that so that we start with a clean slate.</p>
+<p style="text-align: left;"><span style="color: #10808e; font-size: 29px;">Step 05: Adding Some Color</span></p>
+<p style="text-align: left;">The wireframe has a rectangle around the navigation menu. This usually indicates a colored box in that area. Let's add some color to our&nbsp;&nbsp;<kbd>&lt;nav&gt;</kbd>. In the&nbsp;&nbsp;<kbd>styles.css</kbd>&nbsp;file let's make a CSS rule modifying our&nbsp;&nbsp;<kbd>&lt;nav&gt;</kbd></p>
+<div class="callout" style="text-align: left;">
+<h4>CSS Basics</h4>
+<p>Every CSS rule is made up of 3 elements. First we always need a&nbsp;<strong>selector</strong>, in this case we want to modify any&nbsp;&nbsp;<kbd>&lt;nav&gt;</kbd>&nbsp;elements on our page so our selector will be:&nbsp;&nbsp;<kbd>nav</kbd>. Next there are always curly braces { } that form the&nbsp;<strong>declaration block</strong>. Inside those braces we place one or more&nbsp;<strong>declarations</strong>: pairs of 'property to change: value to change it to'</p>
+<p>So in this example to change the background color of our&nbsp;&nbsp;<kbd>&lt;nav&gt;</kbd>&nbsp;after adding the new rule our style block would look like this: (you should use one of your selected colors, probably not salmon)</p>
+<pre><code>
+     nav {
+         background-color: salmon;
+     }    
+        </code></pre>
+<p>It's worth taking a moment and talking about what valid options you have to designate color. The 3 main ways are hexadecimal, rgb, and predefined color names. Take a moment to visit&nbsp;&nbsp;<a href="http://www.w3schools.com/cssref/css_colors_legal.asp" target="_blank" rel="noopener">W3Schools: CSS colors</a>&nbsp;to get a brief outline about the differences. Also take a look at this&nbsp;&nbsp;<a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank" rel="noopener">list of color names</a>&nbsp;that your browser will understand.&nbsp;&nbsp;Also take a look at this&nbsp;<a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank" rel="noopener noreferrer">a color picker</a>&nbsp;that has hex names, color names, and rgb all in one place.</p>
+</div>
+<h2 style="text-align: left;">Step 06: Link Color</h2>
+<p>The color you changed the background of the&nbsp;&nbsp;<kbd>&lt;nav&gt;</kbd>&nbsp;to may have made your text hard to read. In the site plan you should have chosen a color for your links. Add the following line to your css rule to change the&nbsp;&nbsp;<kbd>color</kbd>&nbsp;for the text in the&nbsp;<kbd>&lt;nav&gt;</kbd>&nbsp;. Again replace the colorwith one from your chosen palette. Pick something that looks good with the background color and that is easily readable.</p>
+<pre><code>
+     nav {
+         color: #ee1010;
+     }    
+</code></pre>
+<p>What changed? Nothing!!? Read below for an explanation why.</p>
+<div>
+<p>Take a look at your page. Pay particular attention to our new links. Did the color change? Your carefully chosen color is probably still blue or purple! CSS stands for Cascading Style Sheets. the Cascading part means that you can have more than one set of styles apply to an element, and that they will cascade down with the rules closest to the element taking precedence.</p>
+<p>We applied a color change at the&nbsp;&nbsp;<kbd>&lt;nav&gt;</kbd>&nbsp;level, but&nbsp;&nbsp;<kbd>&lt;a&gt;</kbd>&nbsp;tags have some default styling as well and the<kbd>&lt;a&gt;</kbd>&nbsp;is closer to the text we want styled than the&nbsp;&nbsp;<kbd>&lt;nav&gt;</kbd>&nbsp;is so those styles override ours. If we want the links to change back to the color we chose we will need to move our rule closer...override the default styling of the&nbsp;&nbsp;<kbd>&lt;a&gt;</kbd>&nbsp;itself most likely. W3Schools has some more info on the idea of&nbsp;&nbsp;<a href="http://www.w3schools.com/css/css_howto.asp" target="_blank" rel="noopener">cascading</a>.</p>
+<p></p>
+</div>
+<p style="text-align: left;"><em>Really</em>&nbsp;change the color of your navigation link text by adding a rule with&nbsp;<code>"nav a"</code>&nbsp;as the selector. Then add your&nbsp;<code>color: #whatever your color is;</code>&nbsp;to that rule. (We will learn more about that combo selector in a week or two)</p>
+<div class="highlight1" style="text-align: left;">
+<p>Your new css rule should look something like this (change the color to one of your colors)</p>
+<p><code>
+     nav a {
+</code></p>
+<p><code>         color: #ee1010;
+</code></p>
+<p><span style="font-family: monospace;"><span style="background-color: #bfe6ff;">}</span></span></p>
+</div>
+<h2 style="text-align: left;">Step 07: More Background Color</h2>
+<p>Our next step is to add the background color to the second&nbsp;&nbsp;<kbd>&lt;section&gt;</kbd>&nbsp;in our page.</p>
+<div>
+<p>We have a slight problem here though. If we use the tag as a selector like we did with&nbsp;&nbsp;<kbd>&lt;nav&gt;</kbd>&nbsp;it will change both of our sections, which we don't want. From the Khan Academy lesson you should have learned about 2 other selectors: id selectors and class selectors. Id selectors should be used for elements that have unique styling needs, class selectors for those elements that might share styles with other elements. (I tend to use far more class selectors than id, I like re-using CSS rules)</p>
+</div>
+<p>In this case let's use an ID. Add an&nbsp;&nbsp;<kbd>class=""</kbd>&nbsp; attribute to the second section so we can apply some styles just to that one. Pick a descriptive name for the id, then add a rule to change the background color of that box to one of your colors. (Remember that when you write the rule you need to add a '.' to your id name so the browser knows it's looking for the&nbsp;<em>id</em>&nbsp;and not the&nbsp;&nbsp;<em>tag</em>)</p>
+<div>
+<p>When naming ids or classes make sure to follow the same guidelines you were given last week for filenames. ie all lowercase, no spaces or other special characters!</p>
+</div>
+<p>Your section should look like this (call it "sec1")</p>
+<pre><code>&lt;section class="sec1"&gt; ...content of section here... &lt;/section&gt;
+</code></pre>
+<p>The corresponding css to style that id would look something like this:</p>
+<pre><code>.sec1 {
+   ...css here...
+} 
+</code></pre>
+<p style="text-align: left;"><span style="color: #10808e; font-size: 29px;">Step 08: Headline Colors</span></p>
+<p style="text-align: left;">Next let's make our headlines stand out a little more. Lets change the color of all headlines again to one of the colors in your palette. There are six headline types,&nbsp;<em><kbd>&lt;h1&gt;</kbd>&nbsp;-&nbsp;<kbd>&lt;h6&gt;</kbd></em>&nbsp;.&nbsp; We will give <em>all</em> headlines the same styling. We can write one rule instead of six to change them all.</p>
+<p style="text-align: left;">To have a set of rules apply to more than one selector we separate them with a comma.</p>
+<h2 style="text-align: left;">Multiple selector Example</h2>
+<div class="callout" style="text-align: left;">
+<p><span style="font-family: georgia, serif;">So the rule to change the color of all headlines would look something like this:</span></p>
+<div class="highlight1">
+<p><span style="font-family: georgia, serif;"><code>
+h1,  h2,  h3,  h4,  h5,  h6  {
+</code></span></p>
+<p><span style="font-family: georgia, serif;"><code>     color:  #6495ED;
+</code></span></p>
+<p><span style="font-family: georgia, serif;"><code>} </code></span></p>
+<p><span style="font-family: georgia, serif;"><code><span style="color: #45818e;">   </span></code></span></p>
+</div>
+<span style="font-family: georgia, serif;">FYI: </span><br />
+<ul>
+<li><span style="font-family: georgia, serif;"><code>In CSS Always put one space after every comma</code></span></li>
+<li><span style="font-family: georgia, serif;"><code>In CSS Always put one space before every {</code></span></li>
+<li><span style="font-family: georgia, serif;"><code>In CSS Always put a semicolon at the end of every line;</code></span></li>
+<li><span style="font-family: georgia, serif;"><code>In HTML Keep in mind that the number by the h means size of the font</code></span></li>
+<li><span style="font-family: georgia, serif;"><code>&lt;h1&gt; is the largest headline and &lt;h6&gt; is the smallest headline </code></span></li>
+</ul>
+</div>
+<h2 style="text-align: left;">Step&nbsp;9: Paragraph Color</h2>
+<p style="text-align: left;">Revisit the second section:&nbsp;&nbsp;the color of the second section may have made the text there hard to read. For our final step lets&nbsp;add a class selector to change the color of that text. Add a&nbsp;<kbd>class="hspec"</kbd>&nbsp;to the&nbsp;<kbd>&lt;p&gt;</kbd>&nbsp;tag inside the second section. Use "hspec" for the name for the headline class and "pspec" for the section 2 paragraph. Then create a css rule to change the color of the font on the style.css page. Remember that you need to precede your rule with a '.' so that the browser knows it's looking for the&nbsp;<em>class</em>&nbsp;and not a&nbsp;<em>tag</em>.</p>
+<div class="callout" style="text-align: left;">
+<p><span style="font-family: georgia, serif;">Here is an example of how the HTML and CSS should look for this step</span></p>
+<div class="highlight1">
+<pre><code>&lt;section class="sec2"&gt; &lt;!-- this is the second row of content --&gt; 
+            &lt;img ...&gt;
+        &lt;div&gt; 
+            &lt;h2 class="hspec"&gt;sec2 title&lt;/h2&gt;
+            &lt;p class="pspec"&gt;sec2 paragraph&lt;/p&gt;
+        &lt;/div&gt;
+&lt;/section&gt;        
+    </code></pre>
+<pre><code>
+.sec2 {
+   background-color: #396E94;
+}    
+.hspec, .pspec {
+    color: #E7C24F;
+}</code></pre>
+</div>
+<span style="font-family: georgia, serif; font-size: 12pt;">Now, set up section names for section 1 and section 3 the same way naming them sec1 and sec3&nbsp;</span></div>
+<h2 style="text-align: left;">Step 10: A Bit More Structure</h2>
+<p>Let's add one more box to our content. For this one we will use a&nbsp;<kbd>&lt;div&gt;</kbd>&nbsp;and we want the whole page to be inside of it. Place your opening&nbsp;<kbd>&lt;div&gt;</kbd>&nbsp;right after the opening&nbsp;<kbd>&lt;body&gt;</kbd>&nbsp;tag and the closing&nbsp;<kbd>&lt;/div&gt;</kbd>&nbsp;right before the closing &lt;/body&gt;. Add an id of&nbsp;<kbd>content</kbd>&nbsp;to the&nbsp;<kbd>&lt;div&gt;</kbd>.</p>
+<div>
+<p>Right now the paragraphs of text on our site can stretch out as far as the browser is wide. On very wide screens that can leave things very thin and not very attractive. We should use the&nbsp;&nbsp;<a href="http://www.w3schools.com/cssref/pr_dim_width.asp" target="_blank" rel="noopener">width</a>&nbsp;property to fix this.</p>
+<p>Where do we apply the width however? We could apply it to all&nbsp;&nbsp;<kbd>&lt;p&gt;</kbd>&nbsp;tags, but what if we have a paragraph that needs to be wider or more narrow than what we choose? We could make a class and apply it to all&nbsp;<kbd>&lt;p&gt;</kbd>&nbsp;elements individually, and that would work, but there is an easier way.</p>
+</div>
+<p style="text-align: left;"><span style="color: #10808e; font-size: 29px;">Step 11: Setting&nbsp; Width</span></p>
+<p>Apply a width of <em>960px</em> to your whole page to keep it from stretching across the whole browser window by making a css rule for the div we added in the last step with the id of&nbsp;<kbd>content</kbd>. Doing it on that<kbd>&lt;div&gt;</kbd>&nbsp;will make sure that <em>no</em> element on the page can be wider than that.</p>
+<div class="callout" style="text-align: left;">
+<p>We set the width, but the page still doesn't look right. It would look better if it were centered instead of left aligned. Centering with CSS is not hard, but can be confusing. This is because block and inline elements are centered differently. Block elements are centered by setting a width and adjusting the left and right margin (<a href="http://www.w3schools.com/cssref/pr_margin.asp" target="_blank" rel="noopener noreferrer">Margin</a>&nbsp;is the space between elements on a page, or between the element and the edge of the browser window). Inline elements are centered by using the&nbsp;<a href="http://www.w3schools.com/cssref/pr_text_text-align.asp" target="_blank" rel="noopener noreferrer">text-align</a>&nbsp;property.</p>
+</div>
+<p style="text-align: left;">Let's center our page content. The&nbsp;<kbd>&lt;div&gt;</kbd>&nbsp;we set the width on is a block element, that means we will need to use&nbsp;<em><kbd>margin</kbd></em>&nbsp;to center it. The idea is to set a width (we did this in the last step) and then tell the browser to take whatever margin is available and split it between the left and right of the element.</p>
+<div class="callout" style="text-align: left;">
+<p>This is a lot easier than it sounds. Add&nbsp;&nbsp;<em><kbd>margin: 0 auto;</kbd></em>&nbsp;to the CSS rule for&nbsp;<kbd>#content</kbd>. We gave it 2 values. The first says to set the top and bottom margins to 0 and the second says to set the left and right margins to auto: meaning to split any margin available between the left and right.</p>
+<p>If you are wanting to add a background color to your entire page, you will do that here in the #content as well: background-color:&nbsp; black;</p>
+<p>Do not set any items in the body, only in the #content.&nbsp; Nothing on this website will extend beyond the 960px, there will only be white on the left and right.</p>
+</div>
+<h4>FYI: Block vs Inline</h4>
+<p>There are two basic types of HTML elements:&nbsp;&nbsp;<em><a href="http://www.w3schools.com/html/html_blocks.asp" target="_blank" rel="noopener">Block and Inline</a>&nbsp;</em>.</p>
+<p>Block elements are greedy. By default they take up 100% of the space they have available, meaning they will not allow any other element to share the line they are on...thus forcing line breaks around themselves. Most of the semantic elements we use for grouping related content fall into the block category, as well&nbsp;<img src="https://byui-cit.github.io/wdd100/images/index-top.png" alt="index-top" title="index-top" width="260" height="154" style="float: right;" />as&nbsp;<kbd>&lt;h1&gt;</kbd>&nbsp;-&nbsp;&nbsp;<kbd>&lt;h6&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;p&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;div&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;ul&gt;</kbd>, and&nbsp;&nbsp;<kbd>&lt;li&gt;</kbd>.</p>
+<p>Inline elements like to share. They will allow as many other elements to share the line they are on until it is full...then they wrap. Some examples of inline elements are&nbsp;&nbsp;<kbd>&lt;a&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;img&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;span&gt;</kbd>,&nbsp;&nbsp;<kbd>&lt;strong&gt;</kbd>and plain text</p>
+<p>Another way to think of this is that block elements (if we are working in a top down, left to right language like english) flow vertically down the page, whileinline elements flow horizontally from left to right across the page.</p>
+<p>The default block or inline behavior of a tag can be changed with the CSS&nbsp;&nbsp;<a href="http://www.w3schools.com/cssref/pr_class_display.asp" target="_blank" rel="noopener"><kbd>display</kbd>&nbsp;</a>&nbsp;property.</p>
+<p>Look at the top of your page (screenshot to the right). Take a moment to consider why it looks this way? Why is the list of links down below the logo? Why does each link show on it's own line? Most importantly, the wireframe shows the links on the same line as the logo and each link in the same line as each other, how can we make them do that? The top of your page should look something like this:</p>
+<p>(I'm not going to give you the answer to this right now, and you won't be graded on it...yet. We will not be changing anything yet, so do not change anything here.)</p>
+<h2 style="text-align: left;">Step 12: Add Classes and Id's to images</h2>
+<p style="text-align: left;">Go back through your code and perform the following list of items:</p>
+<ul>
+<li>add a class or id to each image ( logo is id of logo, banner is class of banner, and the two section images are classes of img1 and img2</li>
+<li>the social media icons and links:&nbsp; socialmedia icons are&nbsp; class of icon and the class of&nbsp; socialmedia link),</li>
+<li>add an id of info to your copyright/name line</li>
+<li>make sure you have &lt;header&gt; &lt;/header&gt; tags around your logo, nav, <em><strong>and</strong></em> banner image</li>
+<li>Make sure you have &lt;footer&gt; &lt;/footer&gt; tags around your info line and socialmedia icons</li>
+</ul>
+<h2 style="text-align: left;">Step 13: Check Your Work</h2>
+<p style="text-align: left;">Preview your website to make sure the web page displays correctly. Pay special attention to whether your images are all displaying. Everything will still be vertically down the left side of the page.&nbsp;</p>
+<p style="text-align: left;">Once verified, submit the share/collaborate URL for your page to iLearn: Please paste the collaborate url in the comment section. The URL should look something like this:&nbsp; &lt;a&nbsp;href="<a href="https://glitch.com/edit/join/293847b">https://glitch.com/<em><strong>edit/join</strong></em>/293847b</a>"&gt;</p>
+<p style="text-align: left;">Before you turn in your "<strong>share</strong>" link with me, make sure to&nbsp;check&nbsp;your page to make sure&nbsp;you have no&nbsp;&nbsp;errors that show. (glitch does a great job by showing a red dot or other mark on the left side&nbsp;to show there is an error somewhere.&nbsp; If you hover over the mark, it will even tell you where the error is located or what is missing.</p>
+<div class="highlight3" style="text-align: left;">
+<h4>Here is this week's page examples:</h4>
+<p style="text-align: center;"><img src="../Blockclass%20week%203.jpg" alt="" title="" width="303" height="514" /></p>
+<p style="text-align: center;">&nbsp; &nbsp; &nbsp;</p>
+<p style="text-align: center;"><img src="../BlockClasses%20wk3html.jpg" alt="" title="" width="367" height="422" />&nbsp; &nbsp;&nbsp;<img src="../BlockClasses%20wk3css.jpg" alt="" title="" width="386" height="654" /></p>
+</div>
+<h2 style="text-align: left;">Grading</h2>
+<p style="text-align: left;">This activity will be graded using the following rubric (10 points):</p>
+<div class="highlight2">
+<ul>
+<li style="text-align: left;">Links added for the navigation and social icons. (The links in the navigation can link to the index.html page or #, since we haven't created the other pages yet. The social links should work and link to somewhere though.)&nbsp;</li>
+<li style="text-align: left;">Uses images for the social media links (make sure you upload the images to your assets folder)</li>
+<li style="text-align: left;">CSS used to change the colors of backgrounds and text.&nbsp;</li>
+<li style="text-align: left;">Add&nbsp; class&nbsp;and&nbsp; id&nbsp; to apply css styles to objects. (Styles include size, color, background-color, etc)</li>
+<li style="text-align: left;">Examples of centering of text on the page&nbsp;(headlines and section 3), and give the headlines and paragraphs padding: 10px; so that the words are not hugging the edge so they are easier to read.&nbsp;</li>
+<li style="text-align: left;">ALL sections are boxed together (semantics used when possible, div if no semantic available: section, header, footer are semantic, content needs a div) and given a class or id as instructed.</li>
+<li style="text-align: left;">images are given class or id names (see instructions)</li>
+<li style="text-align: left;">give the entire page width and centering margin using the #content (do not use the body for this).&nbsp; If you want a background-color for your entire page, this is where it would go.</li>
+<li style="text-align: left;">The HTML is well formed and without errors (check for any red error marks, hover over and fix to remove the error before submitting if possible).&nbsp;</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- end #article -->
+<p>
+<script src="../Web%20Files/course.js"></script>
+</p>
+</div>
+</body>
+</html>
